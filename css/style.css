@@ -32,10 +32,10 @@ body {
 .logo-img{
   height: 120px;
   border-radius: 20px;
-  padding-top: 5px;
+  padding-top: 0px;
   padding-bottom: 5px;
   margin-top: 0%;
-  width:350px;
+  width:150px;
 }
 .heading_container {
   display: -webkit-box;
@@ -817,3 +817,28 @@ ul {
 .card{
   margin-top: 20px;
 }
+.domain-icon{
+  background-color: #fcf7fc;
+  border-radius: 40px;
+}
+
+/*** Footer Start ***/
+
+.footer .short-link a,
+.footer .help-link a,
+.footer .contact-link a {
+    transition: .5s;
+}
+
+.footer .short-link a:hover,
+.footer .help-link a:hover,
+.footer .contact-link a:hover {
+    letter-spacing: 1px;
+}
+
+.footer .hightech-link a:hover {
+    background: var(--bs-secondary);
+    border: 0;
+}
+
+/*** Footer End ***/
