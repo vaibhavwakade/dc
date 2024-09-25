@@ -99,6 +99,34 @@
             text-decoration: none;
             color: inherit;
         }
+        .card-container {
+    padding: 0; /* Remove padding */
+}
+
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+        @media (min-width: 992px) {
+    .card-container {
+        margin-bottom: 20px; /* Uniform margin for all cards */
+    }
+}
 
     </style>
 </head>
@@ -115,7 +143,7 @@
 
             <!-- Card 1 -->
             <div class="col-lg-4 col-md-6 col-sm-6 mb-4 card-container">
-                <a href="project1.html" class="card-link">
+                <a href="softwareproject1.html" class="card-link">
                     <div class="card">
                         <img src="images/Machine1.png" class="card-img-top" alt="Card Image">
                         <div class="card-body">

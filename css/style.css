@@ -842,3 +842,41 @@ ul {
 }
 
 /*** Footer End ***/
+
+/* card group start */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  flex: 1 1 calc(25% - 20px);
+  min-width: 250px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  margin: 15px;
+}
+
+.card p {
+  margin: 0 15px 15px;
+}
+
+/* card group end */
