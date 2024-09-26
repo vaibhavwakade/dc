@@ -1,254 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Projects</title>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <link rel="icon" type="image/x-icon" href="images/logoDC.jpg">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>Project1 - DC Supply Projects</title>
+  <link rel="icon" type="image/x-icon" href="images/logoDC.jpg">
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-    <!-- Font Awesome Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-    <style>
-        /* Body and Typography */
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fa;
-        }
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-        h1 {
-            font-size: 2.5rem;
-            color: white;
-        }
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-        /* Container for cards */
-        .container {
-            margin-top: 50px;
-            margin-bottom: 50px;
-        }
-
-        /* 3D card design */
-        .card-container {
-            perspective: 1000px;
-        }
-
-        .card {
-            position: relative;
-            border: none;
-            overflow: hidden;
-            border-radius: 20px;
-            transform-style: preserve-3d;
-            transform: rotateY(0deg);
-            transition: transform 0.6s ease, box-shadow 0.3s ease;
-            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-        }
-
-        .card:hover {
-            transform: rotateY(15deg) scale(1.05);
-            box-shadow: 0 25px 35px rgba(0, 0, 0, 0.3);
-        }
-
-        .card img {
-            transition: transform 0.6s ease;
-        }
-
-        .card:hover img {
-            transform: scale(1.2);
-        }
-
-        /* Adding depth */
-        .card-body {
-            transform: translateZ(50px);
-            text-align: center;
-            transition: transform 0.6s ease;
-        }
-
-        .card:hover .card-body {
-            transform: translateZ(100px);
-        }
-
-        .card-title {
-            font-size: 20px;
-            font-weight: 600;
-        }
-
-        .card-text {
-            font-size: 14px;
-            color: #666;
-        }
-
-        /* Footer Styling */
-        .footer_section {
-            background-color: #343a40;
-            padding: 20px;
-            color: #fff;
-            text-align: center;
-        }
-
-        .footer_section p {
-            margin: 0;
-        }
-
-        .card-link {
-            text-decoration: none;
-            color: inherit;
-        }
-        .card-container {
-    padding: 0; /* Remove padding */
-}
-
-.card {
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-}
-
-.card-body {
-    padding: 15px;
-}
-
-        @media (min-width: 992px) {
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
     .card-container {
-        margin-bottom: 20px; /* Uniform margin for all cards */
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 1200px;
+      width: 100%;
+      margin: auto;
     }
-}
 
-    </style>
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+      flex: 1 1 calc(25% - 20px);
+      min-width: 250px;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card h3 {
+      margin: 15px;
+    }
+
+    .card p {
+      margin: 0 15px 15px;
+    }
+
+    /* list */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .division {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 550px; /* Fixed width for responsiveness */
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .division:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    .animated-list {
+      padding-left: 20px; /* Indent for ordered list */
+    }
+
+    .animated-list li {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeIn 0.5s forwards;
+    }
+
+    .animated-list li:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .animated-list li:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .animated-list li:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    .animated-list li:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+
+    .animated-list li:nth-child(5) {
+      animation-delay: 0.5s;
+    }
+
+    .animated-list li:nth-child(6) {
+      animation-delay: 0.6s;
+    }
+
+    .animated-list li:nth-child(7) {
+      animation-delay: 0.7s;
+    }
+
+    .animated-list li:nth-child(8) {
+      animation-delay: 0.8s;
+    }
+
+    .animated-list li:nth-child(9) {
+      animation-delay: 0.9s;
+    }
+
+    .animated-list li:nth-child(10) {
+      animation-delay: 1s;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center; /* Center align in mobile view */
+      }
+
+      .division {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 400px; /* Maximum width */
+      }
+    }
+    .division {
+        text-align: center; /* Center the text */
+        margin: 20px auto; /* Center the division block itself */
+        width: 80%; /* Adjust the width as needed */
+    }
+
+
+    .yellow-division {
+      background-color: #fbca47; /* Yellow background */
+      height: 50px; /* Fixed height */
+      width: 100%; /* Full width to make it responsive */
+    }
+  </style>
 </head>
-<body>
 
-    <!-- Marquee -->
-    <marquee style="background-color: orange; color: rgb(252, 251, 251); padding: 10px;">
-        <h1>Software Projects</h1>
-    </marquee>
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section pt-0">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-0">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logoDC.jpg" class="logo-img">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <!-- Cards Section -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="do.html"> Privacy </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html"> Blog </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us </a>
+                </li>
+              </ul>
+              <div class="user_option">
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+  <br><br><br>
+
+<!-- card group start -->
+<div class="card-container">
+    <div class="card">
+        <img src="images/android1.jpg" alt="Card Image 1">
+        <h3>E-commerce Website</h3>
+        <p>A platform to buy and sell products online, with features like shopping carts, payment gateways, and user accounts.</p>
+    </div>
+    <div class="card">
+        <img src="images/android2.jpg" alt="Card Image 2">
+        <h3>Portfolio Website</h3>
+        <p>A personal website to showcase your skills, projects, and achievements, tailored to attract potential employers or clients.</p>
+    </div>
+    <div class="card">
+        <img src="images/android3.jpg" alt="Card Image 3">
+        <h3>Blogging Platform</h3>
+        <p>A web application for writing, sharing, and commenting on blog posts, with user authentication and categorization features.</p>
+    </div>
+    <div class="card">
+        <img src="images/android4.jpg" alt="Card Image 4">
+        <h3>Social Media App</h3>
+        <p>An interactive platform for users to connect, share content, and engage with friends through posts, comments, and likes.</p>
+    </div>
+</div>
+
+<div class="yellow-division"></div>
+  <!-- card group end -->
+
+<!-- List -->
+<div class="container">
+    <div class="division">
+        <h2 style="color: black;">Diploma Projects</h2>
+        <ol class="animated-list">
+            <li>E-commerce Website</li>
+            <li>Portfolio Website</li>
+            <li>Blogging Platform</li>
+            <li>Social Media App</li>
+            <li>Online Learning Management System</li>
+            <li>Event Management System</li>
+            <li>Job Portal</li>
+            <li>Recipe Sharing Platform</li>
+            <li>Real Estate Listing Website</li>
+            <li>Online Booking System</li>
+            <li>Task Management Tool</li>
+            <li>Online Voting System</li>
+            <li>Feedback and Review System</li>
+            <li>Membership Management System</li>
+            <li>Health and Fitness Tracker</li>
+            <li>Online Travel Agency</li>
+            <li>Virtual Classroom</li>
+            <li>Chat Application</li>
+            <li>Digital Library</li>
+            <li>Forum or Discussion Board</li>
+            <li>Personal Finance Management Tool</li>
+            <li>Photography Portfolio Website</li>
+            <li>Video Streaming Platform</li>
+            <li>News Aggregator</li>
+            <li>Online Quiz Platform</li>
+            <li>Recipe Finder App</li>
+            <li>Content Management System (CMS)</li>
+            <li>Learning Quiz App</li>
+            <li>Online Marketplace for Handicrafts</li>
+            <li>Car Rental System</li>
+            <li>Online Grocery Store</li>
+            <li>Mobile App Landing Page</li>
+            <li>Local Business Directory</li>
+            <li>Study Group Organizer</li>
+            <li>Online Ticket Booking System</li>
+            <li>Multi-Vendor Shopping Cart</li>
+            <li>Online Portfolio Builder</li>
+            <li>Subscription-Based Content Platform</li>
+            <li>Recipe Cost Calculator</li>
+            <li>Art Gallery Website</li>
+            <li>Food Delivery Service</li>
+            <li>DIY Project Sharing Platform</li>
+            <li>Book Review and Recommendation System</li>
+            <li>Social Networking Site for Students</li>
+            <li>Video Conference Tool</li>
+            <li>Environmental Awareness Website</li>
+            <li>Music Streaming Service</li>
+            <li>Online Resume Builder</li>
+            <li>Home Inventory Management System</li>
+            <li>Online Course Registration System</li>
+            <li>Interactive Storytelling Platform</li>
+            <li>Online Donation Platform</li>
+            <li>Children's Learning Portal</li>
+            <li>Recipe Nutrition Calculator</li>
+            <li>Online Fashion Store</li>
+            <li>Language Learning Platform</li>
+            <li>Pet Adoption Website</li>
+            <li>Travel Blog</li>
+            <li>Personal Blog</li>
+            <li>Job Application Tracker</li>
+            <li>Fitness Challenge Tracker</li>
+            <li>Customer Support Ticketing System</li>
+            <li>Live Chat Support Tool</li>
+            <li>Event Countdown Timer</li>
+            <li>Online Coding Platform</li>
+            <li>Membership Subscription Service</li>
+            <li>Online Tutoring Service</li>
+            <li>Virtual Reality Tour Platform</li>
+            <li>Online Learning Forum</li>
+            <li>Recipe Video Sharing Site</li>
+            <li>Online Grocery List App</li>
+            <li>Skill Sharing Platform</li>
+            <li>Website for Freelancers</li>
+            <li>Online Class Scheduling System</li>
+            <li>Local Community Forum</li>
+            <li>Budget Planning Tool</li>
+            <li>Digital Marketing Agency Website</li>
+            <li>Online Course Review Platform</li>
+            <li>Project Management Application</li>
+            <li>Health Tracking App</li>
+            <li>Online Discussion Platform</li>
+            <li>Online Art Marketplace</li>
+            <li>Customer Feedback Portal</li>
+            <li>Business Plan Template Generator</li>
+            <li>Website for Local Non-Profits</li>
+            <li>Interactive Travel Map</li>
+            <li>Local Event Calendar</li>
+            <li>Recipe Blog</li>
+            <li>Online Survey Tool</li>
+            <li>Volunteer Management System</li>
+            <li>Community Gardening Platform</li>
+            <li>Custom T-shirt Design Tool</li>
+            <li>Digital Product Marketplace</li>
+            <li>Online Study Material Repository</li>
+            <li>Local History Archive</li>
+            <li>Fitness Tracker Website</li>
+            <li>Online Recipe Book</li>
+            <li>Virtual Cooking Class Platform</li>
+            <li>Family Budget Tracker</li>
+            <li>Online Plant Nursery</li>
+            <li>Pet Care Community</li>
+            <li>DIY Home Improvement Planner</li>
+            <li>Online Craft Marketplace</li>
+            <li>Interactive Fitness Coach</li>
+            <li>Virtual Running Group</li>
+            <li>Online Travel Planner</li>
+            <li>Recipe Book Sharing Platform</li>
+            <li>Home Repair Directory</li>
+            <li>Personal Development Blog</li>
+            <li>Public Speaking Training Platform</li>
+            <li>Online Cooking Challenge</li>
+            <li>Recipe Subscription Box Service</li>
+            <li>Online Travel Journal</li>
+            <li>Virtual Book Club</li>
+            <li>Online Tutoring Marketplace</li>
+            <li>Digital Scrapbooking Platform</li>
+            <li>Remote Team Collaboration Tool</li>
+            <li>Customizable Meal Planner</li>
+            <li>Online Investment Tracker</li>
+            <li>Children’s Activity Planner</li>
+            <li>Online Mental Health Resources</li>
+            <li>Digital Wellness Platform</li>
+            <li>Online Community Health Forum</li>
+            <li>Interactive Local Business Map</li>
+            <li>Online Recipe Sharing Community</li>
+            <li>Budget-Friendly Travel Planner</li>
+            <li>Eco-Friendly Product Directory</li>
+            <li>Personal Productivity Tracker</li>
+            <li>Virtual Classroom for Kids</li>
+            <li>Online Language Exchange Platform</li>
+            <li>Home Energy Efficiency Calculator</li>
+            <li>Online Book Exchange</li>
+            <li>Social Impact Measurement Tool</li>
+            <li>Community Volunteer Opportunity Hub</li>
+            <li>Online Writing Workshop</li>
+            <li>Interactive Children's Storybook</li>
+            <li>Online Fashion Blog</li>
+            <li>Personalized Gift Recommendation System</li>
+            <li>Online Neighborhood Watch Platform</li>
+            <li>Health and Wellness Blog</li>
+            <li>Social Responsibility Project Directory</li>
+            <li>Online Pet Care Resource Center</li>
+            <li>Digital Recipe Organizer</li>
+            <li>Online Skill Assessment Tool</li>
+            <li>Virtual Tutoring Platform for STEM</li>
+            <li>Interactive Science Fair Project Hub</li>
+            <li>Online Parenting Community</li>
+            <li>Customized Fitness Plan Generator</li>
+            <li>Online Book Recommendations Platform</li>
+            <li>Web-Based Music Composition Tool</li>
+            <li>Neighborhood Resource Sharing Platform</li>
+            <li>Online Personal Branding Workshop</li>
+            <li>Online Craft Class Directory</li>
+            <li>Social Impact Fundraising Platform</li>
+            <li>Digital Art Collaboration Platform</li>
+            <li>Interactive Local Events Map</li>
+            <li>Online Cooking Show Platform</li>
+            <li>Customizable Self-Care Planner</li>
+            <li>Online Debate Platform</li>
+            <li>Digital Art Gallery</li>
+            <li>Online Sustainable Living Guide</li>
+        </ol>
+    </div>
+</div>
+<!-- Division B -->
+<div class="division">
+    <h2 style="color: black;">Final Year Projects</h2>
+    <ol class="animated-list">
+        <li>Smart City Management System</li>
+        <li>Online Examination System</li>
+        <li>Healthcare Management System</li>
+        <li>Library Management System</li>
+        <li>Online Food Ordering System</li>
+        <li>Distributed File System</li>
+        <li>IoT-Based Home Automation System</li>
+        <li>Real-Time Chat Application</li>
+        <li>Virtual Reality E-commerce Platform</li>
+        <li>Blockchain-Based Voting System</li>
+        <li>Travel Planning Application</li>
+        <li>Augmented Reality Application for Shopping</li>
+        <li>Employee Management System</li>
+        <li>Data Visualization Dashboard</li>
+        <li>Online Auction System</li>
+        <li>Smart Waste Management System</li>
+        <li>Personal Health Record Management System</li>
+        <li>Online Ticket Reservation System</li>
+        <li>Online Music Streaming Service</li>
+        <li>Collaborative Learning Platform</li>
+        <li>Smart Agriculture System</li>
+        <li>Web-Based Travel Agency</li>
+        <li>Online Grocery Delivery System</li>
+        <li>Parking Management System</li>
+        <li>Online Learning Portal</li>
+        <li>Insurance Management System</li>
+        <li>Task Automation Web Application</li>
+        <li>Online Job Search Platform</li>
+        <li>Social Networking App for Professionals</li>
+        <li>Fitness and Diet Tracking Application</li>
+        <li>Smart Traffic Management System</li>
+        <li>Web-Based Inventory Management System</li>
+        <li>Online Marketplace for Services</li>
+        <li>Cloud-Based File Storage System</li>
+        <li>Online Collaboration Tool for Teams</li>
+        <li>Smart Inventory Management System</li>
+        <li>Online Learning Assessment System</li>
+        <li>Interactive Language Learning Platform</li>
+        <li>Remote Healthcare Monitoring System</li>
+        <li>Web-Based Fitness Coaching Platform</li>
+        <li>Digital Asset Management System</li>
+        <li>Online Fitness Challenge Platform</li>
+        <li>Customer Relationship Management (CRM) System</li>
+        <li>Virtual Event Management System</li>
+        <li>Web-Based Donation Platform</li>
+        <li>Online Coding Learning Platform</li>
+        <li>Social Impact Analysis Tool</li>
+        <li>Web-Based Travel Journal Application</li>
+        <li>Online Product Comparison Platform</li>
+        <li>Smart Energy Management System</li>
+        <li>Digital Marketing Analytics Dashboard</li>
+        <li>Online Language Translation Tool</li>
+        <li>Web-Based Digital Business Card Generator</li>
+        <li>Interactive Presentation Tool</li>
+        <li>Website Performance Monitoring Tool</li>
+        <li>Web-Based Supply Chain Management System</li>
+        <li>Online Community Engagement Platform</li>
+        <li>Dynamic Website Template Generator</li>
+        <li>Web-Based Student Management System</li>
+        <li>Intelligent Chatbot for Customer Support</li>
+        <li>Interactive E-Learning Module</li>
+        <li>Web-Based Personal Finance Tracker</li>
+        <li>Online Recipe Recommendation System</li>
+        <li>Web-Based Project Management Tool</li>
+        <li>Online Real Estate Management System</li>
+        <li>Social Media Analytics Tool</li>
+        <li>Web-Based Bug Tracking System</li>
+        <li>Online Event Ticketing System</li>
+        <li>Interactive Online Portfolio Website</li>
+        <li>Remote Collaboration for Software Development</li>
+        <li>Web-Based Smart Agriculture Monitoring System</li>
+        <li>Online Fitness Tracker with Diet Plans</li>
+        <li>Website for Crowdsourcing Ideas</li>
+        <li>Web-Based Performance Evaluation System</li>
+        <li>Online Plant Care Management System</li>
+        <li>Personalized Learning Experience Platform</li>
+        <li>Web-Based Talent Management System</li>
+        <li>Online Fashion Store with AR Fitting Room</li>
+        <li>Interactive Travel Itinerary Builder</li>
+        <li>Web-Based Time Management Tool</li>
+        <li>Social Media Integration for E-commerce Sites</li>
+        <li>Online Property Rental Management System</li>
+        <li>Web-Based Event Planning Tool</li>
+        <li>Online Language Proficiency Assessment</li>
+        <li>Dynamic Content Management System</li>
+        <li>Web-Based Charity Fundraising Platform</li>
+        <li>Online Service Appointment Booking System</li>
+        <li>Remote Learning Management System</li>
+        <li>Online Gardening Community and Resources</li>
+        <li>Interactive Digital Marketing Campaign Planner</li>
+        <li>Website for Local Farmers' Market</li>
+        <li>Online Fitness Challenges and Competitions</li>
+    </ol>
+</div>
+  
+  <br><br>
+
+  <!-- Footer -->
+  <footer class="footer_section">
     <div class="container">
-        <div class="row">
-
-            <!-- Card 1 -->
-            <div class="col-lg-4 col-md-6 col-sm-6 mb-4 card-container">
-                <a href="softwareproject1.html" class="card-link">
-                    <div class="card">
-                        <img src="images/Machine1.png" class="card-img-top" alt="Card Image">
-                        <div class="card-body">
-                            <h5 class="card-title">Web Development</h5>
-                            <p class="card-text">This is a brief description for Project 1.</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="col-lg-4 col-md-6 col-sm-6 mb-4 card-container">
-                <a href="project2.html" class="card-link">
-                    <div class="card">
-                        <img src="images/Machine1.png" class="card-img-top" alt="Card Image">
-                        <div class="card-body">
-                            <h5 class="card-title">App Development</h5>
-                            <p class="card-text">This is a brief description for Project 2.</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="col-lg-4 col-md-6 col-sm-6 mb-4 card-container">
-                <a href="project3.html" class="card-link">
-                    <div class="card">
-                        <img src="images/Machine1.png" class="card-img-top" alt="Card Image">
-                        <div class="card-body">
-                            <h5 class="card-title">Ai</h5>
-                            <p class="card-text">This is a brief description for Project 3.</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="col-lg-4 col-md-6 col-sm-6 mb-4 card-container">
-                <a href="project4.html" class="card-link">
-                    <div class="card">
-                        <img src="images/Machine1.png" class="card-img-top" alt="Card Image">
-                        <div class="card-body">
-                            <h5 class="card-title">Ml</h5>
-                            <p class="card-text">This is a brief description for Project 4.</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="col-lg-4 col-md-6 col-sm-6 mb-4 card-container">
-                <a href="project5.html" class="card-link">
-                    <div class="card">
-                        <img src="images/Machine1.png" class="card-img-top" alt="Card Image">
-                        <div class="card-body">
-                            <h5 class="card-title">Full Stack</h5>
-                            <p class="card-text">This is a brief description for Project 5.</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="col-lg-4 col-md-6 col-sm-6 mb-4 card-container">
-                <a href="project6.html" class="card-link">
-                    <div class="card">
-                        <img src="images/Machine1.png" class="card-img-top" alt="Card Image">
-                        <div class="card-body">
-                            <h5 class="card-title">Java</h5>
-                            <p class="card-text">This is a brief description for Project 6.</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-        </div>
+      <div class="footer_content">
+    
+      </div>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwWL16YO8Yo7IBKlsQtD5NLqE9KdHEUbHFrT6dpfy8urNQvA/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <p>
+        &copy; 2024 All Rights Reserved.
+      </p>
     </div>
 
-    <!-- Footer Section -->
-    <footer class="footer_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <h4>DC Supply Project</h4>
-                    <p>Don’t miss out on this chance to shape your future. Apply now and embark on an exciting journey with us!</p>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <h4>Quick Links</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="about.html" class="text-light">About Us</a></li>
-                        <li><a href="student_contact.php" class="text-light">Contact Us</a></li>
-                        <li><a href="login.php" class="text-light">Privacy Policy</a></li>
-                        <li><a href="navtara.html" class="text-light">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <h4>Contact Us</h4>
-                    <p><i class="fas fa-phone"></i> +1 234 567 890</p>
-                    <p><i class="fas fa-envelope"></i> info@dcsupply.com</p>
-                </div>
-            </div>
-            <p class="text-center mt-4">© 2024 DC Supply Project. All Rights Reserved.</p>
-        </div>
-    </footer>
+  </footer>
+  <!-- End Footer -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Custom Script -->
+  <script src="js/custom.js"></script>
 </body>
+
 </html>
