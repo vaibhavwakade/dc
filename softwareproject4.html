@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Project4 - DC Supply Projects</title>
+  <link rel="icon" type="image/x-icon" href="images/logoDC.jpg">
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    flex: 1 1 calc(25% - 20px);
+    min-width: 250px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 15px;
+}
+
+.card p {
+    margin: 0 15px 15px;
+}
+
+/* list */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap:80px;  */
+}
+
+.division {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 550px; /* Fixed width for responsiveness */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.division:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.animated-list {
+    padding-left: 20px; /* Indent for ordered list */
+}
+
+.animated-list li {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeIn 0.5s forwards;
+}
+
+.animated-list li:nth-child(1) { animation-delay: 0.1s; }
+.animated-list li:nth-child(2) { animation-delay: 0.2s; }
+.animated-list li:nth-child(3) { animation-delay: 0.3s; }
+.animated-list li:nth-child(4) { animation-delay: 0.4s; }
+.animated-list li:nth-child(5) { animation-delay: 0.5s; }
+.animated-list li:nth-child(6) { animation-delay: 0.6s; }
+.animated-list li:nth-child(7) { animation-delay: 0.7s; }
+.animated-list li:nth-child(8) { animation-delay: 0.8s; }
+.animated-list li:nth-child(9) { animation-delay: 0.9s; }
+.animated-list li:nth-child(10) { animation-delay: 1s; }
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center; /* Center align in mobile view */
+    }
+
+    .division {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 400px; /* Maximum width */
+    }
+}
+.yellow-division {
+    background-color: #fbca47; /* Yellow background */
+    height: 50px; /* Fixed height */
+    width: 100%; /* Full width to make it responsive */
+}
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section starts -->
+    <!-- header section strats -->
+    <header class="header_section pt-0">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-0">
+          <a class="navbar-brand" href="index.html">
+                         <img src="images/logoDC.jpg" class="logo-img"> 
+<!-- 
+            <div class="logo" style="font-family: 'Arial', sans-serif; font-weight: bold; font-size: 36px; color: green; line-height: 1.2; text-align: center; margin: 20px 0;">
+              <span style="display: block; font-size: 48px;">SoftTech</span>
+              <span style="display: block;">Solutions</span>
+            </div> -->
+            
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="do.html"> Privacy </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html"> Blog
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us
+                    </a>
+                  </li>
+                  <li class="nav-item">
+
+
+                  <!-- <a class="nav-link" href="contact.html">Contact us</a> -->
+                </li>
+              </ul>
+              <div class="user_option">
+                <!-- <a href="">
+                  <img src="images/user.png" alt="">
+                </a> -->
+                <!-- <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                </form> -->
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- end header section -->
+  </div>
+  <br><br><br>
+
+ <!-- card group start -->
+ <div class="card-container">
+    <div class="card">
+        <img src="images/android1.jpg" alt="Card Image 1">
+        <h3>Card Title 1</h3>
+        <p>This is a description for card 1. It provides brief information about the card.</p>
+    </div>
+    <div class="card">
+        <img src="images/android2.jpg" alt="Card Image 2">
+        <h3>Card Title 2</h3>
+        <p>This is a description for card 2. It provides brief information about the card.</p>
+    </div>
+    <div class="card">
+        <img src="images/android3.jpg" alt="Card Image 3">
+        <h3>Card Title 3</h3>
+        <p>This is a description for card 3. It provides brief information about the card.</p>
+    </div>
+    <div class="card">
+        <img src="images/android4.jpg" alt="Card Image 4">
+        <h3>Card Title 4</h3>
+        <p>This is a description for card 4. It provides brief information about the card.</p>
+    </div>
+</div>
+
+<div class="yellow-division"></div>
+
+ <!-- card group end -->
+
+ <!-- List -->
+ <div class="container">
+    <div class="division">
+        <h2>Division One</h2>
+        <ol class="animated-list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+            <li>Item 10</li>
+        </ol>
+    </div>
+    <div class="division">
+        <h2>Division Two</h2>
+        <ol class="animated-list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+            <li>Item 10</li>
+        </ol>
+    </div>
+</div>
+<div class="container">
+    <div class="division">
+        <h2>Division One</h2>
+        <ol class="animated-list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+            <li>Item 10</li>
+        </ol>
+    </div>
+    <div class="division">
+        <h2>Division Two</h2>
+        <ol class="animated-list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+            <li>Item 10</li>
+        </ol>
+    </div>
+</div>
+<!-- List -->
+
+    <!-- Footer start -->
+    <div class="container-fluid footer bg-dark wow fadeIn text-white" data-wow-delay=".3s">
+      <!-- map section -->
+  <section class="map_section">
+    <div class="container">
+      <h3>Find Us Here:</h3>
+      <iframe
+        src="https://www.google.com/maps/place/Audumbar+Complex/@18.4450817,73.8233352,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2953e4c72c8f5:0x81afcc9ab7390a6e!8m2!3d18.4450817!4d73.8233352!16s%2Fg%2F11svdtwcn9?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D"
+        width="100%"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+  <!-- end map section -->
+      <div class="container pt-5 pb-4">
+          <div class="row g-5">
+              <div class="col-lg-3 col-md-6">
+                  <a href="index.html">
+                      <h4 class="text-white fw-bold fw-bold d-block">DC<span class="text-secondary">Supply Project</span> </h4>
+                  </a>
+                  <p class="mt-4 text-light">Don’t miss out on this chance to shape your future. Apply now and embark on an exciting journey with us!</p>
+                  <!-- <div class="d-flex hightech-link m-0">
+                      <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-primary"></i></a>
+                      <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-twitter text-primary"></i></a>
+                      <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-instagram text-primary"></i></a>
+                      <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
+                  </div> -->
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <a href="#" class="h3 text-white fw-bold">Short Link</a>
+                  <div class="mt-4 d-flex flex-column short-link">
+                      <a href="about.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>About us</a>
+                      <a href="student_contact.php" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact us</a>
+                      <a href="login.php" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy</a>
+                      <a href="navtara.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Blog</a>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <a href="#" class="h3 text-white fw-bold">Help Link</a>
+                  <div class="mt-4 d-flex flex-column help-link">
+                      <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Terms Of use</a>
+                      <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy Policy</a>
+                      <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Helps</a>
+                      <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>FQAs</a>
+                      <a href="student_contact.php" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact</a>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <a href="#" class="h3 text-white fw-bold">Contact Us</a>
+                  <div class="text-white mt-4 d-flex flex-column contact-link">
+                      <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Audumbar Complex B, Steel floor, s-21 control Shree Control' Chowk</a>
+                      <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i>+91 7709641406</a>
+                      <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> navatrainternship@gmail.com</a>
+                  </div>
+              </div>
+          </div>
+          <hr class="text-light mt-5 mb-4">
+          <div class="row">
+              <div class="col-md-6 text-center text-md-start">
+                  <span class="text-light"><a href="#" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>DC Supply Project </a>, All right reserved.</span>
+              </div>
+          </div>
+      </div>
+        
+  </div>
+  
+  <!-- Footer end -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- owl carousel script -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 0,
+      navText: [],
+      center: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  </script>
+  <!-- end owl carousel script -->
+</body>
+
+</html>
