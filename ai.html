@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>AI - DC Supply Projects</title>
+  <link rel="icon" type="image/x-icon" href="images/logoDC.jpg">
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
+     .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 5px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    justify-content:center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card-description {
+    margin: 10px 0;
+    color: #555;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #fbca47;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+}
+
+.card-button:hover {
+    background-color: #fbca47;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* One card per row */
+    }
+}
+
+    /* list */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .division {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 550px; /* Fixed width for responsiveness */
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .division:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    .animated-list {
+      padding-left: 20px; /* Indent for ordered list */
+    }
+
+    .animated-list li {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeIn 0.5s forwards;
+    }
+
+    .animated-list li:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .animated-list li:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .animated-list li:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    .animated-list li:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+
+    .animated-list li:nth-child(5) {
+      animation-delay: 0.5s;
+    }
+
+    .animated-list li:nth-child(6) {
+      animation-delay: 0.6s;
+    }
+
+    .animated-list li:nth-child(7) {
+      animation-delay: 0.7s;
+    }
+
+    .animated-list li:nth-child(8) {
+      animation-delay: 0.8s;
+    }
+
+    .animated-list li:nth-child(9) {
+      animation-delay: 0.9s;
+    }
+
+    .animated-list li:nth-child(10) {
+      animation-delay: 1s;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center; /* Center align in mobile view */
+      }
+
+      .division {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 400px; /* Maximum width */
+      }
+    }
+    .division {
+        text-align: center; /* Center the text */
+        margin: 20px auto; /* Center the division block itself */
+        width: 80%; /* Adjust the width as needed */
+    }
+
+
+    .yellow-division {
+      background-color: #fbca47; /* Yellow background */
+      height: 50px; /* Fixed height */
+      width: 100%; /* Full width to make it responsive */
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section pt-0">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-0">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logoDC.jpg" class="logo-img">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="do.html"> Privacy </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html"> Blog </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us </a>
+                </li>
+              </ul>
+              <div class="user_option">
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+  <br><br><br>
+
+<!-- card group start -->
+
+
+<div class="card-container">
+    <div class="card">
+        <img src="images/ai-1.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Image Classification</h3>
+            <p class="card-description">  Create an AI model that can recognize and categorize objects or animals in images using deep learning techniques.</p>
+            <!-- <a href="software.html" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/ai-2.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Chatbot</h3>
+            <p class="card-description">Develop a convers ational AI chatbot that can understand and respond to user queries using NLP</p>
+            <!-- <a href="app.html" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/ai-3.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Object Detection</h3>
+            <p class="card-description">Build an AI model that can detect and track objects in real-time using computer vision techniques.</p></p>
+            <!-- <a href="#" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/ai-4.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Sentiment Analysis</h3>
+            <p class="card-description">Create an AI model that can analyze and classify text data as positive, negative, or neutral using NLP techniques.</p>
+            <!-- <a href="#" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+</div>
+
+
+<div class="yellow-division"></div>
+  <!-- card group end -->
+
+<!-- List -->
+<div class="container">
+    <div class="division">
+        <h2 style="color: black;">Diploma Projects</h2>
+        <ol class="animated-list">
+            <li>Customer Support Chatbot</li>
+    <li>Health Consultation Chatbot</li>
+    <li>Image Recognition System</li>
+    <li>Facial Recognition Attendance System</li>
+    <li>Emotion Detection from Images</li>
+    <li>Text Summarization Tool</li>
+    <li>Sentiment Analysis on Social Media</li>
+    <li>Language Translation App</li>
+    <li>Stock Price Prediction</li>
+    <li>Customer Churn Prediction</li>
+    <li>Movie Recommendation System</li>
+    <li>E-commerce Product Recommendations</li>
+    <li>Disease Prediction System</li>
+    <li>Medical Image Analysis</li>
+    <li>Drug Discovery Using AI</li>
+    <li>Autonomous Delivery Robot</li>
+    <li>Gesture-Controlled Robot</li>
+    <li>AI-based Game Opponent</li>
+    <li>Procedural Content Generation</li>
+    <li>Smart Home Assistant</li>
+    <li>Energy Consumption Optimization</li>
+    <li>Credit Card Fraud Detection</li>
+    <li>Insurance Claim Fraud Detection</li>
+    <li>AI Tutoring System</li>
+    <li>Automatic Grading System</li>
+    <li>Disaster Response System</li>
+    <li>Wildlife Conservation Monitoring</li>
+    <li>Customer Feedback Analysis Tool</li>
+    <li>Traffic Pattern Analysis</li>
+    <li>Speech-to-Text Application</li>
+    <li>Voice Command Home Automation</li>
+    <li>Player Performance Analysis</li>
+    <li>Predictive Modeling for Sports Outcomes</li>
+    <li>Sales Forecasting Tool</li>
+    <li>Targeted Advertising System</li>
+    <li>Personal Finance Advisor</li>
+    <li>Algorithmic Trading System</li>
+    <li>Intrusion Detection System</li>
+    <li>Deepfake Detection</li>
+    <li>AR-based Learning Application</li>
+    <li>AI for Virtual Worlds</li>
+    <li>Smart Waste Management System</li>
+    <li>Public Transport Optimization</li>
+    <li>Autonomous Vehicle Simulation</li>
+    <li>AI Traffic Management System</li>
+    <li>Image Enhancement Tool</li>
+    <li>Style Transfer Application</li>
+    <li>AI Music Composition Tool</li>
+    <li>Art Generation using GANs</li>
+    <li>Emotion-Aware User Interfaces</li>
+    <li>AI for Accessibility</li>
+    <li>Product Review Analyzer</li>
+    <li>Political Sentiment Analysis</li>
+    <li>Air Quality Monitoring System</li>
+    <li>Wildfire Detection System</li>
+    <li>Crop Disease Prediction</li>
+    <li>Precision Farming Tool</li>
+    <li>AI Blog Post Generator</li>
+    <li>Automated Video Creation</li>
+    <li>AI Calendar Management</li>
+    <li>Smart Recipe Suggestion Tool</li>
+    <li>AI for NPC Behavior</li>
+    <li>Adaptive Difficulty Adjustment</li>
+    <li>Story Generation Tool</li>
+    <li>Code Generation Assistant</li>
+    <li>Health Monitoring Wearable</li>
+    <li>Fitness Coaching AI</li>
+    <li>Resume Screening System</li>
+    <li>Employee Sentiment Analysis</li>
+    <li>AI-Powered Chat Support for E-commerce</li>
+    <li>Dynamic Pricing System</li>
+    <li>Earthquake Prediction System</li>
+    <li>Flood Risk Assessment Tool</li>
+    <li>Smart Grid Management</li>
+    <li>Renewable Energy Forecasting</li>
+    <li>Churn Prediction Model for Telecoms</li>
+    <li>Smart Call Routing System</li>
+    <li>Inventory Optimization System</li>
+    <li>Supply Chain Risk Assessment</li>
+    <li>AI-Driven SEO Tool</li>
+    <li>Social Media Engagement Analysis</li>
+    <li>AI-Based Disaster Management</li>
+    <li>AI-Driven Inventory Management</li>
+    <li>AI for Smart Agriculture</li>
+    <li>AI-Enhanced Event Planning</li>
+    <li>Personalized Travel Itinerary Planner</li>
+    <li>AI for Tour Behavior Analysis</li>
+    <li>AI-Powered Fraud Detection</li>
+    <li>AI for Environmental Monitoring</li>
+    <li>Automated Feedback Analysis</li>
+    <li>Voice-Activated Personal Assistant</li>
+    <li>AI in Digital Marketing</li>
+    <li>Smart Traffic Signal Control</li>
+    <li>AI-Enhanced Language Learning Tool</li>
+    <li>Customer Insights through AI</li>
+    <li>AI for Content Moderation</li>
+    <li>Smart Home Security System</li>
+    <li>Predictive Text Input</li>
+    <li>Personalized Learning Paths in Education</li>
+    <li>AI-Based Cybersecurity Solutions</li>
+        </ol>
+    </div>
+</div>
+<!-- Division B -->
+<div class="division">
+    <h2 style="color: black;">Final Year Projects</h2>
+    <ol class="animated-list">
+        <li>Precision Farming Tool</li>
+    <li>AI Blog Post Generator</li>
+    <li>Automated Video Creation</li>
+    <li>AI Calendar Management</li>
+    <li>Smart Recipe Suggestion Tool</li>
+    <li>AI for NPC Behavior</li>
+    <li>Adaptive Difficulty Adjustment</li>
+    <li>Story Generation Tool</li>
+    <li>Code Generation Assistant</li>
+    <li>Health Monitoring Wearable</li>
+    <li>Fitness Coaching AI</li>
+    <li>Resume Screening System</li>
+    <li>Employee Sentiment Analysis</li>
+    <li>AI-Powered Chat Support for E-commerce</li>
+    <li>Dynamic Pricing System</li>
+    <li>Earthquake Prediction System</li>
+        <li>Customer Support Chatbot</li>
+    <li>Health Consultation Chatbot</li>
+    <li>Image Recognition System</li>
+    <li>Facial Recognition Attendance System</li>
+    <li>Emotion Detection from Images</li>
+    <li>Text Summarization Tool</li>
+    <li>Sentiment Analysis on Social Media</li>
+    <li>Language Translation App</li>
+    <li>Stock Price Prediction</li>
+    <li>Customer Churn Prediction</li>
+    <li>Movie Recommendation System</li>
+    <li>E-commerce Product Recommendations</li>
+    <li>Disease Prediction System</li>
+    <li>Medical Image Analysis</li>
+    <li>Drug Discovery Using AI</li>
+    <li>Autonomous Delivery Robot</li>
+    <li>Gesture-Controlled Robot</li>
+    <li>AI-based Game Opponent</li>
+    <li>Procedural Content Generation</li>
+    <li>Smart Home Assistant</li>
+    <li>Energy Consumption Optimization</li>
+    <li>Credit Card Fraud Detection</li>
+    <li>Insurance Claim Fraud Detection</li>
+    <li>AI Tutoring System</li>
+    <li>Automatic Grading System</li>
+    <li>Disaster Response System</li>
+    <li>Wildlife Conservation Monitoring</li>
+    <li>Customer Feedback Analysis Tool</li>
+    <li>Traffic Pattern Analysis</li>
+    <li>Speech-to-Text Application</li>
+    <li>Voice Command Home Automation</li>
+    <li>Player Performance Analysis</li>
+    <li>Predictive Modeling for Sports Outcomes</li>
+    <li>Sales Forecasting Tool</li>
+    <li>Targeted Advertising System</li>
+    <li>Personal Finance Advisor</li>
+    <li>Algorithmic Trading System</li>
+    <li>Intrusion Detection System</li>
+    <li>Deepfake Detection</li>
+    <li>AR-based Learning Application</li>
+    <li>AI for Virtual Worlds</li>
+    <li>Smart Waste Management System</li>
+    <li>Public Transport Optimization</li>
+    <li>Autonomous Vehicle Simulation</li>
+    <li>AI Traffic Management System</li>
+    <li>Image Enhancement Tool</li>
+    <li>Style Transfer Application</li>
+    <li>AI Music Composition Tool</li>
+    <li>Art Generation using GANs</li>
+    <li>Emotion-Aware User Interfaces</li>
+    <li>AI for Accessibility</li>
+    <li>Product Review Analyzer</li>
+    <li>Political Sentiment Analysis</li>
+    <li>Air Quality Monitoring System</li>
+    <li>Wildfire Detection System</li>
+    <li>Crop Disease Prediction</li>
+    <li>Flood Risk Assessment Tool</li>
+    <li>Smart Grid Management</li>
+    <li>Renewable Energy Forecasting</li>
+    <li>Churn Prediction Model for Telecoms</li>
+    <li>Smart Call Routing System</li>
+    <li>Inventory Optimization System</li>
+    <li>Supply Chain Risk Assessment</li>
+    <li>AI-Driven SEO Tool</li>
+    <li>Social Media Engagement Analysis</li>
+    <li>AI-Based Disaster Management</li>
+    <li>AI-Driven Inventory Management</li>
+    <li>AI for Smart Agriculture</li>
+    <li>AI-Enhanced Event Planning</li>
+    <li>Personalized Travel Itinerary Planner</li>
+    <li>AI for Tour Behavior Analysis</li>
+    <li>AI-Powered Fraud Detection</li>
+    <li>AI for Environmental Monitoring</li>
+    <li>Automated Feedback Analysis</li>
+    <li>Voice-Activated Personal Assistant</li>
+    <li>AI in Digital Marketing</li>
+    <li>Smart Traffic Signal Control</li>
+    <li>AI-Enhanced Language Learning Tool</li>
+    <li>Customer Insights through AI</li>
+    <li>AI for Content Moderation</li>
+    <li>Smart Home Security System</li>
+    <li>Predictive Text Input</li>
+    <li>Personalized Learning Paths in Education</li>
+    <li>AI-Based Cybersecurity Solutions</li>
+    
+    </ol>
+</div>
+  
+  <br><br>
+
+  <!-- Footer -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="footer_content">
+    
+      </div>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwWL16YO8Yo7IBKlsQtD5NLqE9KdHEUbHFrT6dpfy8urNQvA/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <p>
+        &copy; 2024 All Rights Reserved.
+      </p>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Custom Script -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
