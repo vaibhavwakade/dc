@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("ssss", $full_name, $email, $password, $mobile_number);
 
     if ($stmt->execute()) {
-        header("Location: index.php");
+        header("Location: homelogin.php");
     } else {
         echo "Error: " . $stmt->error;
     }

@@ -46,7 +46,7 @@
             <input type="text" name="mobile_number" placeholder="Mobile Number" required>
             <button type="submit">Sign Up</button>
         </form>
-        <a href="index.php">Already have an account? Login</a>
+        <a href="homelogin.php">Already have an account? Login</a>
     </div>
 </body>
 </html>
