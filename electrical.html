@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Project1 - DC Supply Projects</title>
+  <title>Electrical - DC Supply Projects</title>
   <link rel="icon" type="image/x-icon" href="images/logoDC.jpg">
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -43,40 +43,77 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <style>
     .card-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      max-width: 1200px;
-      width: 100%;
-      margin: auto;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 5px;
+    margin: auto;
+}
 
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    justify-content:center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card-description {
+    margin: 10px 0;
+    color: #555;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #fbca47;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+}
+
+.card-button:hover {
+    background-color: #fbca47;
+}
+
+@media (max-width: 768px) {
     .card {
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      transition: transform 0.3s;
-      flex: 1 1 calc(25% - 20px);
-      min-width: 250px;
+        width: calc(50% - 20px); /* Two cards per row */
     }
+}
 
-    .card:hover {
-      transform: translateY(-10px);
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* One card per row */
     }
-
-    .card img {
-      width: 100%;
-      height: auto;
-    }
-
-    .card h3 {
-      margin: 15px;
-    }
-
-    .card p {
-      margin: 0 15px 15px;
-    }
+}
 
     /* list */
     .container {
@@ -233,26 +270,39 @@
 <!-- card group start -->
 <div class="card-container">
     <div class="card">
-        <img src="images/android1.jpg" alt="Card Image 1">
-        <h3>E-commerce Website</h3>
-        <p>A platform to buy and sell products online, with features like shopping carts, payment gateways, and user accounts.</p>
+        <img src="images/electrical1.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Power Systems</h3>
+            <p class="card-description">Smart Grid Technology, Solar Power Management System, Energy Storage Solutions, Wind Energy Conversion System.</p>
+            <a href="software.html" class="card-button">Explore More</a>
+        </div>
     </div>
     <div class="card">
-        <img src="images/android2.jpg" alt="Card Image 2">
-        <h3>Portfolio Website</h3>
-        <p>A personal website to showcase your skills, projects, and achievements, tailored to attract potential employers or clients.</p>
+        <img src="images/electrical2.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Electronics</h3>
+            <p class="card-description">IoT-Based Home Automation, Wearable Health Monitoring Device, RFID-Based Tracking System, Signal Processing for Audio Applications.</p>
+            <a href="app.html" class="card-button">Explore More</a>
+        </div>
     </div>
     <div class="card">
-        <img src="images/android3.jpg" alt="Card Image 3">
-        <h3>Blogging Platform</h3>
-        <p>A web application for writing, sharing, and commenting on blog posts, with user authentication and categorization features.</p>
+        <img src="images/electrical3.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Control Systems</h3>
+            <p class="card-description">Autonomous Robot Navigation, PID Control for Temperature Regulation, Drones for Agricultural Monitoring, Automated Water Level Control System.</p>
+            <a href="ai.html" class="card-button">Explore More</a>
+        </div>
     </div>
     <div class="card">
-        <img src="images/android4.jpg" alt="Card Image 4">
-        <h3>Social Media App</h3>
-        <p>An interactive platform for users to connect, share content, and engage with friends through posts, comments, and likes.</p>
+        <img src="images/electrical4.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Communication Systems</h3>
+            <p class="card-description"> Design of a Wireless Sensor Network, Implementation of 5G Communication Technology, Satellite Communication System, Optical Fiber Communication Project.</p>
+            <a href="python.html" class="card-button">Explore More</a>
+        </div>
     </div>
 </div>
+
 
 <div class="yellow-division"></div>
   <!-- card group end -->
@@ -260,131 +310,130 @@
 <!-- List -->
 <div class="container">
     <div class="division">
-        <h2 style="color: black;">Electrical Projects</h2>
+        <h2 style="color: black;">Diploma Projects</h2>
         <ol class="animated-list">
-            <li>Automated Voltage Regulator</li>
-            <li>Solar-Powered Battery Charger</li>
-            <li>Wireless Energy Meter</li>
-            <li>Smart Power Management System</li>
-            <li>Arduino-Based Frequency Counter</li>
-            <li>Programmable Logic Controller (PLC) Projects</li>
-            <li>Smart Grid Monitoring System</li>
-            <li>AC-DC Converter Circuit</li>
-            <li>Power Factor Correction Circuit</li>
-            <li>Smart Electric Vehicle Charging Station</li>
-            <li>Line Following Robot</li>
-            <li>Wireless Light Control System</li>
-            <li>Digital Multimeter with Arduino</li>
-            <li>Automated Solar Tracking System</li>
-            <li>Energy Harvesting from Vibration</li>
-            <li>LED Display Voltage Level Indicator</li>
-            <li>Smart Home Energy Management System</li>
-            <li>Induction Heating System</li>
-            <li>Digital Temperature Controller</li>
-            <li>RFID-Based Energy Meter</li>
-            <li>Ultrasonic Distance Measurement System</li>
-            <li>Wireless Home Automation System</li>
-            <li>IoT-Based Power Monitoring System</li>
-            <li>Low-Cost Oscilloscope Using Arduino</li>
-            <li>Battery Management System for Electric Vehicles</li>
-            <li>Smart Irrigation System Using Sensors</li>
-            <li>Power Line Communication System</li>
-            <li>Home Automation Using Raspberry Pi</li>
-            <li>Remote-Controlled Electrical Appliances</li>
-            <li>High-Voltage Transmission Line Monitoring</li>
-            <li>Smart Metering System with IoT</li>
-            <li>Energy Efficient Lighting Control System</li>
-            <li>Single-Phase Induction Motor Controller</li>
-            <li>Dynamic Voltage Restorer</li>
-            <li>Wind Energy Conversion System</li>
-            <li>Wireless Control of Home Appliances</li>
-            <li>Smart Energy Distribution Board</li>
-            <li>Electricity Theft Detection System</li>
-            <li>Graphical User Interface for Electrical Measurements</li>
-            <li>Automated Testing System for Electrical Equipment</li>
-            <li>Arduino-Based Signal Generator</li>
-            <li>Inductive Power Transfer System</li>
-            <li>Smart Lighting System Using Motion Sensors</li>
-            <li>Data Acquisition System for Electrical Parameters</li>
-            <li>Microcontroller-Based Motor Control System</li>
-            <li>Remote Power Switching System</li>
-            <li>Automated Fault Detection System in Electrical Circuits</li>
-            <li>Voltage and Current Data Logger</li>
-            <li>DC-DC Converter for Renewable Energy Applications</li>
-            <li>Smart Home Lighting Control with IoT</li>
-            <li>Wind Turbine Monitoring System</li>
-            <li>Automated Water Level Control System</li>
-            <li>Low-Cost Power Analyzer</li>
-            <li>Voice-Controlled Electrical Appliances</li>
-            <li>IoT-Based Industrial Automation System</li>
-            <li>Remote Sensing and Monitoring of Electrical Equipment</li>
-            <li>Wireless Sensor Network for Energy Monitoring</li>
-            <li>Automated Circuit Breaker System</li>
-            <li>Interactive Energy Consumption Dashboard</li>
-            <li>Electric Motor Protection System</li>
-            <li>Battery Backup System for Home Appliances</li>
-            <li>LED Power Supply Circuit Design</li>
-            <li>Smart Home Control with Voice Recognition</li>
-            <li>Automated Load Shedding System</li>
+          <li>Solar Power Generation System</li>
+          <li>Wind Energy Conversion System</li>
+          <li>Smart Grid Monitoring System</li>
+          <li>Energy Management System for Smart Homes</li>
+          <li>Automatic Street Light Control Using Solar Energy</li>
+          <li>Microgrid Design and Simulation</li>
+          <li>Battery Energy Storage System</li>
+          <li>Hybrid Renewable Energy System (Solar and Wind)</li>
+          <li>Power Factor Correction System</li>
+          <li>Grid-Tied Solar Inverter</li>
+          <li>Load Flow Analysis of Power Systems</li>
+          <li>Design of a Smart Metering System</li>
+          <li>Remote Monitoring of Power Consumption</li>
+          <li>Electric Vehicle Charging Station</li>
+          <li>Development of a Portable Solar Charger</li>
+          <li>Transformer Design and Analysis</li>
+          <li>Electrical Fault Detection System</li>
+          <li>Smart Distribution Network Using IoT</li>
+          <li>Power Quality Improvement Techniques</li>
+          <li>Design of an Induction Motor Control System</li>
+          <li>Renewable Energy Forecasting System</li>
+          <li>Solar Thermal Energy System</li>
+          <li>Home Automation with Energy Monitoring</li>
+          <li>Grid Stability Analysis with Renewable Integration</li>
+          <li>Development of a Power System Simulator</li>
+          <li>Wireless Power Transfer System</li>
+          <li>Voltage Regulation Techniques in Power Systems</li>
+          <li>Automatic Load Shedding System</li>
+          <li>Demand Response Management System</li>
+          <li>Implementation of Smart Grids with Blockchain</li>
+          <li>Design and Simulation of HVDC Transmission System</li>
+          <li>Energy Theft Detection System</li>
+          <li>Performance Analysis of Solar PV Panels</li>
+          <li>Control System for Hydro Power Generation</li>
+          <li>Smart Grid Protection and Automation</li>
+          <li>Design of a Synchronous Generator</li>
+          <li>Implementation of FACTS Devices</li>
+          <li>Electrical Load Forecasting Model</li>
+          <li>Renewable Energy-Based Water Pumping System</li>
+          <li>Grid-Connected Microgrid with Storage</li>
+          <li>Design of a Power System Stabilizer</li>
+          <li>Simulation of Transient Stability in Power Systems</li>
+          <li>Design and Implementation of a Smart Transformer</li>
+          <li>Electricity Theft Prevention System</li>
+          <li>Power Distribution Automation System</li>
+          <li>Study of Distributed Generation Systems</li>
+          <li>Analysis of Renewable Energy Policies</li>
+          <li>Smart Irrigation System Using Solar Power</li>
+          <li>Design of a Fuel Cell Power System</li>
+          <li>Implementation of Energy Management in Industrial Plants</li>
+          <li>Microgrid Control Strategies</li>
+          <li>Renewable Energy Integration in Rural Areas</li>
+          <li>Simulation of a Power System with Wind Turbines</li>
+          <li>Design of an Off-Grid Solar System</li>
+          <li>Analysis of Power System Reliability</li>
+          <li>Smart Appliances with Energy Monitoring</li>
+          <li>Development of a Real-Time Power System Monitoring Tool</li>
         </ol>
     </div>
 </div>
 <!-- Division B -->
 <div class="division">
-    <h2 style="color: black;">Final Year Electrical Projects</h2>
+    <h2 style="color: black;">Final Year Projects</h2>
     <ol class="animated-list">
-        <li>Smart Energy Management System</li>
-        <li>Automated Power Distribution System</li>
-        <li>Renewable Energy Sources Integration System</li>
-        <li>Smart Grid Technologies for Energy Management</li>
-        <li>High-Efficiency Solar Inverter</li>
-        <li>Wireless Power Transfer System</li>
-        <li>Smart Metering for Energy Consumption Monitoring</li>
-        <li>PLC-Based Industrial Automation System</li>
-        <li>Automatic Voltage Stabilizer</li>
-        <li>Digital Power Analyzer</li>
-        <li>Microcontroller-Based Home Automation System</li>
-        <li>Energy Harvesting from Environmental Sources</li>
-        <li>Battery Management System for Electric Vehicles</li>
-        <li>IoT-Based Smart Grid Monitoring System</li>
-        <li>Electric Vehicle Battery Charger</li>
-        <li>Automated Home Energy Management System</li>
-        <li>Single-Phase Induction Motor Control</li>
-        <li>Smart Load Balancing System for Electrical Networks</li>
-        <li>Induction Heating System for Cooking</li>
-        <li>Automated Traffic Control System</li>
-        <li>Solar-Powered Water Pumping System</li>
-        <li>Smart Traffic Signal System with IoT</li>
-        <li>Wireless Sensor Network for Environmental Monitoring</li>
-        <li>Energy Efficient Street Lighting System</li>
-        <li>Microcontroller-Based Automatic Street Light Control</li>
-        <li>Smart Home Lighting Control System Using IoT</li>
-        <li>Automated Electrical Circuit Breaker System</li>
-        <li>Robust Energy Meter for Industrial Applications</li>
-        <li>Voltage and Current Data Logging System</li>
-        <li>Induction Motor Speed Control System</li>
-        <li>Microcontroller-Based Home Energy Monitoring System</li>
-        <li>Wireless Communication System for Smart Grids</li>
-        <li>Temperature and Humidity Control System Using IoT</li>
-        <li>Electricity Theft Detection System</li>
-        <li>Real-Time Monitoring System for Solar Panels</li>
-        <li>High-Efficiency LED Lighting System</li>
-        <li>Smart Home Energy Dashboard</li>
-        <li>Inductive Coupling for Wireless Charging</li>
-        <li>Smart Irrigation Control System for Agriculture</li>
-        <li>Wireless Smart Home Control System</li>
-        <li>Automatic Water Level Control System Using Sensors</li>
-        <li>Smart Building Energy Management System</li>
-        <li>Electricity Consumption Prediction System</li>
-        <li>Portable Solar Power Station</li>
-        <li>Smart Electrical Outlet with Energy Monitoring</li>
-        <li>Adaptive Lighting System for Smart Homes</li>
-        <li>Industrial Automation Using SCADA System</li>
-        <li>Voice-Controlled Home Appliances Using Alexa</li>
-        <li>Energy Efficient UPS System Design</li>
-        <li>Automated Control System for Power Generation</li>
+      <li>Design and Implementation of a Smart Grid</li>
+      <li>Solar Photovoltaic System Design and Analysis</li>
+      <li>Wind Energy Generation and Control System</li>
+      <li>Power Quality Analysis in Distribution Systems</li>
+      <li>Smart Metering and Demand Response System</li>
+      <li>Microgrid Design for Renewable Energy Integration</li>
+      <li>Battery Energy Storage System Optimization</li>
+      <li>HVDC Transmission System Simulation</li>
+      <li>Real-Time Monitoring of Power Systems Using IoT</li>
+      <li>Automatic Voltage Regulator Design</li>
+      <li>Implementation of Power Factor Correction Techniques</li>
+      <li>Load Flow Analysis Using MATLAB</li>
+      <li>Design of a Grid-Tied Solar Inverter</li>
+      <li>Development of an Electric Vehicle Charging Station</li>
+      <li>Energy Management System for Smart Buildings</li>
+      <li>Fault Detection and Isolation in Power Systems</li>
+      <li>Design of an Induction Motor Control System</li>
+      <li>Analysis of Power System Stability</li>
+      <li>Remote Power Monitoring and Control System</li>
+      <li>Simulation of Transient Analysis in Power Networks</li>
+      <li>Development of an Energy Theft Detection System</li>
+      <li>Design of a Renewable Energy-Based Water Pumping System</li>
+      <li>Integration of Solar Energy in Urban Areas</li>
+      <li>Design and Analysis of an Electrical Distribution Network</li>
+      <li>Hybrid Renewable Energy Systems (Solar and Wind)</li>
+      <li>Smart Load Management System for Industrial Applications</li>
+      <li>Study and Implementation of Smart Transformers</li>
+      <li>Power System Reliability Assessment Techniques</li>
+      <li>Analysis of Smart Grid Communication Protocols</li>
+      <li>Design of a Hybrid Energy Storage System</li>
+      <li>Development of a Power System Simulator</li>
+      <li>Solar Thermal Energy Utilization System</li>
+      <li>Energy Optimization in Microgrids</li>
+      <li>Design of an Automatic Street Lighting System</li>
+      <li>Renewable Energy-Based Disaster Recovery System</li>
+      <li>Electricity Generation from Waste Heat</li>
+      <li>Modeling and Simulation of FACTS Devices</li>
+      <li>Implementation of an Automated Power Distribution System</li>
+      <li>Design of a Smart Irrigation System Powered by Solar Energy</li>
+      <li>Wireless Power Transfer for Electric Vehicles</li>
+      <li>Dynamic Modeling of Renewable Energy Sources</li>
+      <li>Design of a Self-Contained Microgrid</li>
+      <li>Assessment of Renewable Energy Policies and Their Impact</li>
+      <li>Optimization of Power Generation from Biomass</li>
+      <li>Design of a Smart Home Energy Management System</li>
+      <li>Electricity Consumption Forecasting Using Machine Learning</li>
+      <li>Analysis of Hybrid Electric Vehicle Charging Systems</li>
+      <li>Smart Energy Grids and Blockchain Technology</li>
+      <li>Load Forecasting Models for Power Systems</li>
+      <li>Integration of Electric Vehicles into Power Grids</li>
+      <li>Solar-Powered Charging Stations for Mobile Devices</li>
+      <li>Design of a Pumped Hydro Storage System</li>
+      <li>Implementation of Smart Appliances for Energy Efficiency</li>
+      <li>Simulation of a Wind Farm for Energy Production</li>
+      <li>Design and Implementation of a Home Energy Audit Tool</li>
     </ol>
 </div>
+  
   <br><br>
 
   <!-- Footer -->

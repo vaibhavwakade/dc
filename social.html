@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Social - DC Supply Projects</title>
+  <link rel="icon" type="image/x-icon" href="images/logoDC.jpg">
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
+     .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 5px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    justify-content:center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card-description {
+    margin: 10px 0;
+    color: #555;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #fbca47;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+}
+
+.card-button:hover {
+    background-color: #fbca47;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* One card per row */
+    }
+}
+
+    /* list */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .division {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 550px; /* Fixed width for responsiveness */
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .division:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    .animated-list {
+      padding-left: 20px; /* Indent for ordered list */
+    }
+
+    .animated-list li {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeIn 0.5s forwards;
+    }
+
+    .animated-list li:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .animated-list li:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .animated-list li:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    .animated-list li:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+
+    .animated-list li:nth-child(5) {
+      animation-delay: 0.5s;
+    }
+
+    .animated-list li:nth-child(6) {
+      animation-delay: 0.6s;
+    }
+
+    .animated-list li:nth-child(7) {
+      animation-delay: 0.7s;
+    }
+
+    .animated-list li:nth-child(8) {
+      animation-delay: 0.8s;
+    }
+
+    .animated-list li:nth-child(9) {
+      animation-delay: 0.9s;
+    }
+
+    .animated-list li:nth-child(10) {
+      animation-delay: 1s;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center; /* Center align in mobile view */
+      }
+
+      .division {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 400px; /* Maximum width */
+      }
+    }
+    .division {
+        text-align: center; /* Center the text */
+        margin: 20px auto; /* Center the division block itself */
+        width: 80%; /* Adjust the width as needed */
+    }
+
+
+    .yellow-division {
+      background-color: #fbca47; /* Yellow background */
+      height: 50px; /* Fixed height */
+      width: 100%; /* Full width to make it responsive */
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section pt-0">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-0">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logoDC.jpg" class="logo-img">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="do.html"> Privacy </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html"> Blog </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us </a>
+                </li>
+              </ul>
+              <div class="user_option">
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+  <br><br><br>
+
+<!-- card group start -->
+
+
+<div class="card-container">
+    <div class="card">
+        <img src="images/social1.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Smart Social Media Display Board</h3>
+            <p class="card-description">  Create an interactive display board that shows real-time social media feeds, trends, and user-generated content. </p>
+            <!-- <a href="software.html" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/social2.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Wearable Social Media Notification Device</h3>
+            <p class="card-description">Develop a wearable device (like a wristband) that provides notifications from social media apps.</p>
+            <!-- <a href="app.html" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/social3.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Augmented Reality Social Media App</h3>
+            <p class="card-description">Design AR glasses that integrate social media features, allowing users to overlay social media content onto their real-world environment.</p></p>
+            <!-- <a href="#" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/social4.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Smart Photo Booth with Social Media Integration</h3>
+            <p class="card-description">Build a photo booth that allows users to take pictures and instantly share them on social media.</p>
+            <!-- <a href="#" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+</div>
+
+
+<div class="yellow-division"></div>
+  <!-- card group end -->
+
+<!-- List -->
+<div class="container">
+    <div class="division">
+        <h2 style="color: black;">Diploma Projects</h2>
+        <ol class="animated-list">
+            <li>Smart Social Media Display Board</li>
+            <li>Wearable Social Media Notification Device</li>
+            <li>Augmented Reality Glasses for Social Media</li>
+            <li>Smart Photo Booth with Social Media Integration</li>
+            <li>Interactive Social Media LED Wall</li>
+            <li>RFID-Based Event Check-In System</li>
+            <li>Portable Social Media Sharing Device</li>
+            <li>Gesture-Controlled Social Media Posting Device</li>
+            <li>Digital Guestbook for Social Media Engagement</li>
+            <li>Smart Mirror with Live Social Media Feeds</li>
+            <li>Real-Time Social Media Polling Station</li>
+            <li>Voice-Activated Social Media Content Creator</li>
+            <li>Wearable Fitness Tracker with Social Media Features</li>
+            <li>Smart Badge for Networking Events</li>
+            <li>Customizable Social Media Notification Device</li>
+            <li>Interactive QR Code Profile Display</li>
+            <li>Digital Signage Displaying Social Media Trends</li>
+            <li>Smart Cup with Social Media Sharing Capability</li>
+            <li>IoT-Based Event Feedback Kiosk</li>
+            <li>Smart Traffic Light System with Social Media Alerts</li>
+            <li>Social Media-Integrated Charity Donation Box</li>
+            <li>Smart Home Security System with Social Media Integration</li>
+            <li>Augmented Reality Business Card with Social Links</li>
+            <li>Real-Time Social Media Engagement Monitor</li>
+            <li>Smart Refrigerator with Social Media Connectivity</li>
+            <li>Automated Recipe Board with Social Sharing Options</li>
+            <li>Interactive Pet Monitoring Device with Social Updates</li>
+            <li>Emergency Response Device with Social Media Connectivity</li>
+            <li>Smart Plant Pot with Social Media Features</li>
+            <li>Connected Health Monitoring Device with Social Sharing</li>
+            <li>Wearable Device for Social Media Alerts</li>
+            <li>Digital Cookbook with Social Media Integration</li>
+            <li>Voice-Controlled Smart Home Assistant for Social Media</li>
+            <li>Real-Time Event Sharing Device</li>
+            <li>Smart Luggage with Social Media Features</li>
+            <li>Social Media-Enabled Fitness Equipment</li>
+            <li>Interactive Social Media Gallery</li>
+            <li>Smart Shopping Cart with Social Media Links</li>
+            <li>Wireless Charging Station with Social Media Alerts</li>
+            <li>Smart Home Automation with Social Media Control</li>
+            <li>Digital Art Frame with Social Media Interaction</li>
+            <li>Connected Weather Station with Social Media Updates</li>
+            <li>Social Media Voting Booth for Events</li>
+            <li>Interactive Gaming Device with Social Media Features</li>
+            <li>Smart Vehicle with Integrated Social Media Options</li>
+            <li>Customizable T-Shirt Displaying Social Media Profiles</li>
+            <li>Digital Time Capsule with Social Media Features</li>
+            <li>IoT-Enabled Charity Event Monitor</li>
+            <li>Smart Study Table with Social Media Integration</li>
+            <li>Portable Social Media Device for Events</li>
+            <li>Real-Time Air Quality Monitor with Social Sharing</li>
+            <li>Automated Social Media Content Distribution Hub</li>
+            <li>Smart Doorbell with Social Media Integration</li>
+            <li>Voice-Activated Home Theater System with Social Media</li>
+            <li>Social Media Integration for Smart Clothing</li>
+            <li>Smart Grocery List Organizer with Social Features</li>
+            <li>Pet Adoption Device with Social Media Promotion</li>
+            <li>IoT-Based Social Media Content Analyzer</li>
+            <li>Smart Desk with Integrated Social Media Tools</li>
+            <li>Wireless Social Media Printer for Instant Sharing</li>
+        </ol>
+    </div>
+</div>
+<!-- Division B -->
+<div class="division">
+    <h2 style="color: black;">Final Year Projects</h2>
+    <ol class="animated-list">
+        <li>Portable Social Media Sharing Device</li>
+    <li>Real-Time Social Media Polling Station</li>
+    <li>Smart Traffic Light System with Social Media Integration</li>
+    <li>Customizable Social Media Notification Device</li>
+    <li>Interactive QR Code Profile Display</li>
+    <li>Smart Cup with Social Media Sharing Features</li>
+    <li>Digital Signage for Social Media Trends</li>
+    <li>Social Media-Integrated Fitness Tracker</li>
+    <li>Automated Recipe Board with Social Sharing</li>
+    <li>Smart Home Security System with Social Media Alerts</li>
+    <li>Augmented Reality Business Card with Social Media Links</li>
+    <li>Real-Time Social Media Engagement Monitor</li>
+    <li>Smart Plant Pot with Social Media Connectivity</li>
+    <li>Connected Health Monitoring Device with Social Media Integration</li>
+    <li>Wearable Fitness Device with Social Media Features</li>
+    <li>Emergency Response Device with Social Media Integration</li>
+    <li>Digital Cookbook with Social Media Sharing Options</li>
+    <li>Interactive Social Media Gallery</li>
+    <li>Smart Shopping Cart with Social Media Integration</li>
+    <li>Wireless Charging Station with Social Media Notifications</li>
+    <li>IoT-Based Charity Donation Box with Social Links</li>
+    <li>Smart Luggage with Social Media Features</li>
+    <li>Digital Time Capsule with Social Media Interaction</li>
+    <li>Real-Time Event Sharing Device</li>
+    <li>Smart Grocery List Organizer with Social Media Features</li>
+    <li>Social Media Voting Booth for Public Events</li>
+    <li>Pet Adoption Device with Social Media Promotion</li>
+    <li>Interactive Gaming Device with Social Media Sharing</li>
+    <li>Smart Vehicle with Social Media Connectivity</li>
+    <li>Digital Art Frame with Social Media Updates</li>
+    <li>Real-Time Air Quality Monitor with Social Sharing</li>
+    <li>Wireless Social Media Printer for Instant Photos</li>
+    <li>IoT-Enabled Social Media Content Analyzer</li>
+    <li>Smart Home Automation System with Social Media Control</li>
+    <li>Digital Recipe Sharing Station</li>
+    <li>Voice-Controlled Home Theater with Social Media Integration</li>
+    <li>Remote-Controlled Camera for Social Media Streaming</li>
+    <li>Interactive Plant Care System with Social Media Features</li>
+    <li>Smart Weather Station with Social Media Updates</li>
+    <li>Social Media Integration for Smart Appliances</li>
+    <li>Connected Cooking Device with Social Media Recipes</li>
+    <li>Smart Doorbell with Social Media Notifications</li>
+    <li>Automated Fitness Equipment with Social Media Sharing</li>
+    <li>Real-Time Sports Event Tracker with Social Media Alerts</li>
+    <li>Social Media Integrated Health Tracker</li>
+    <li>Smart Desk Organizer with Social Media Features</li>
+    <li>Portable Social Media Hub for Events</li>
+    <li>Smart Social Media Display Board</li>
+    <li>Wearable Social Media Notification Device</li>
+    <li>Augmented Reality Glasses for Social Media</li>
+    <li>Interactive Social Media Photo Booth</li>
+    <li>RFID-Based Event Check-In System</li>
+    <li>Smart Mirror with Live Social Media Feeds</li>
+    <li>Digital Guestbook for Social Media Engagement</li>
+    <li>Voice-Activated Social Media Content Creator</li>
+    <li>Gesture-Controlled Social Media Sharing Device</li>
+    <li>Smart Badge for Networking Events</li>
+    
+    </ol>
+</div>
+  
+  <br><br>
+
+  <!-- Footer -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="footer_content">
+    
+      </div>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwWL16YO8Yo7IBKlsQtD5NLqE9KdHEUbHFrT6dpfy8urNQvA/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <p>
+        &copy; 2024 All Rights Reserved.
+      </p>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Custom Script -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
