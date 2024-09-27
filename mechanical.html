@@ -1,314 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mechanical Projects</title>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-    <!-- slider stylesheet -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <title>Hardware - DC Supply Projects</title>
+  <link rel="icon" type="image/x-icon" href="images/logoDC.jpg">
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-    <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    <link rel="icon" type="image/x-icon" href="images/logoDC.jpg">
-    <!-- fonts style -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" />
-    <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet" />
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .card {
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
+   .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 5px;
+    margin: auto;
+}
 
-        .card img {
-            transition: transform 0.3s ease;
-        }
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    justify-content:center;
+    align-items: center;
+}
 
-        .card:hover img {
-            transform: scale(1.05);
-        }
-        
-        .info_section {
-            padding: 30px 0;
-        }
-        
-        .info_section h5 {
-            font-size: 18px;
-            margin-bottom: 15px;
-        }
-        
-        .info_section p {
-            font-size: 14px;
-        }
-        
-        .footer_section {
-            background-color: #f1f1f1; /* Light gray background */
-            padding: 20px; /* Add padding for spacing */
-            text-align: center; /* Center align text */
-            border-top: 1px solid #ddd; /* Optional: Add a top border */
-        }
-        .card {
-            transition: transform 0.2s; /* Animation effect */
-        }
-        .card:hover {
-            transform: scale(1.05); /* Scale up on hover */
-        }
-    </style>
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card-description {
+    margin: 10px 0;
+    color: #555;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #fbca47;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+}
+
+.card-button:hover {
+    background-color: #fbca47;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* One card per row */
+    }
+}
+
+    /* list */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .division {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 550px; /* Fixed width for responsiveness */
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .division:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    .animated-list {
+      padding-left: 20px; /* Indent for ordered list */
+    }
+
+    .animated-list li {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeIn 0.5s forwards;
+    }
+
+    .animated-list li:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .animated-list li:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .animated-list li:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    .animated-list li:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+
+    .animated-list li:nth-child(5) {
+      animation-delay: 0.5s;
+    }
+
+    .animated-list li:nth-child(6) {
+      animation-delay: 0.6s;
+    }
+
+    .animated-list li:nth-child(7) {
+      animation-delay: 0.7s;
+    }
+
+    .animated-list li:nth-child(8) {
+      animation-delay: 0.8s;
+    }
+
+    .animated-list li:nth-child(9) {
+      animation-delay: 0.9s;
+    }
+
+    .animated-list li:nth-child(10) {
+      animation-delay: 1s;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center; /* Center align in mobile view */
+      }
+
+      .division {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 400px; /* Maximum width */
+      }
+    }
+    .division {
+        text-align: center; /* Center the text */
+        margin: 20px auto; /* Center the division block itself */
+        width: 80%; /* Adjust the width as needed */
+    }
+
+
+    .yellow-division {
+      background-color: #fbca47; /* Yellow background */
+      height: 50px; /* Fixed height */
+      width: 100%; /* Full width to make it responsive */
+    }
+  </style>
 </head>
-<body>
 
-  <!-- Marquee -->
-  <marquee style="background-color: orange; color: rgb(252, 251, 251); padding: 10px;">
-    <h1>Mechanical Projects</h1>
-  </marquee>
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section pt-0">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-0">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logoDC.jpg" class="logo-img">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-  <div class="container mt-5"></div>
-    <div class="row">
-        <!-- Repeat this card structure for 20 cards -->
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-                <img src="images/Machine1.png" class="card-img-top" alt="Card Image">
-                <div class="card-body">
-                    <h5 class="card-title">Card Title 1</h5>
-                    <p class="card-text">This is a brief description for Card 1.</p>
-                </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="do.html"> Privacy </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html"> Blog </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us </a>
+                </li>
+              </ul>
+              <div class="user_option">
+              </div>
             </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-                <img src="images/Machine1.png" class="card-img-top" alt="Card Image">
-                <div class="card-body">
-                    <h5 class="card-title">Card Title 2</h5>
-                    <p class="card-text">This is a brief description for Card 2.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-                <img src="images/Machine1.png" class="card-img-top" alt="Card Image">
-                <div class="card-body">
-                    <h5 class="card-title">Card Title 3</h5>
-                    <p class="card-text">This is a brief description for Card 3.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-                <img src="images/Machine1.png" class="card-img-top" alt="Card Image">
-                <div class="card-body">
-                    <h5 class="card-title">Card Title 1</h5>
-                    <p class="card-text">This is a brief description for Card 1.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-                <img src="images/Machine1.png" class="card-img-top" alt="Card Image">
-                <div class="card-body">
-                    <h5 class="card-title">Card Title 2</h5>
-                    <p class="card-text">This is a brief description for Card 2.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-                <img src="images/Machine1.png" class="card-img-top" alt="Card Image">
-                <div class="card-body">
-                    <h5 class="card-title">Card Title 3</h5>
-                    <p class="card-text">This is a brief description for Card 3.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-                <img src="images/Machine1.png" class="card-img-top" alt="Card Image">
-                <div class="card-body">
-                    <h5 class="card-title">Card Title 1</h5>
-                    <p class="card-text">This is a brief description for Card 1.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-                <img src="images/Machine1.png" class="card-img-top" alt="Card Image">
-                <div class="card-body">
-                    <h5 class="card-title">Card Title 2</h5>
-                    <p class="card-text">This is a brief description for Card 2.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-                <img src="images/Machine1.png" class="card-img-top" alt="Card Image">
-                <div class="card-body">
-                    <h5 class="card-title">Card Title 3</h5>
-                    <p class="card-text">This is a brief description for Card 3.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-                <img src="images/Machine1.png" class="card-img-top" alt="Card Image">
-                <div class="card-body">
-                    <h5 class="card-title">Card Title 1</h5>
-                    <p class="card-text">This is a brief description for Card 1.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-                <img src="images/Machine1.png"" class="card-img-top" alt="Card Image">
-                <div class="card-body">
-                    <h5 class="card-title">Card Title 2</h5>
-                    <p class="card-text">This is a brief description for Card 2.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-                <img src="images/Machine1.png"" class="card-img-top" alt="Card Image">
-                <div class="card-body">
-                    <h5 class="card-title">Card Title 3</h5>
-                    <p class="card-text">This is a brief description for Card 3.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-                <img src="images/Machine1.png"" class="card-img-top" alt="Card Image">
-                <div class="card-body">
-                    <h5 class="card-title">Card Title 1</h5>
-                    <p class="card-text">This is a brief description for Card 1.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-                <img src="images/Machine1.png"" class="card-img-top" alt="Card Image">
-                <div class="card-body">
-                    <h5 class="card-title">Card Title 2</h5>
-                    <p class="card-text">This is a brief description for Card 2.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-                <img src="images/Machine1.png" class="card-img-top" alt="Card Image">
-                <div class="card-body">
-                    <h5 class="card-title">Card Title 3</h5>
-                    <p class="card-text">This is a brief description for Card 3.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Continue adding cards up to 20 -->
-        <!-- You would typically loop through an array of data in a real application -->
-
-        <!-- Example of last card -->
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
-                <div class="card-body">
-                    <h5 class="card-title">Card Title 20</h5>
-                    <p class="card-text">This is a brief description for Card 20.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-  <!-- Footer start -->
-  <div class="container-fluid footer bg-dark wow fadeIn text-white" data-wow-delay=".3s">
-    <!-- map section -->
-<section class="map_section">
-  <div class="container">
-    <h3>Find Us Here:</h3>
-    <iframe
-      src="https://www.google.com/maps/place/Audumbar+Complex/@18.4450817,73.8233352,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2953e4c72c8f5:0x81afcc9ab7390a6e!8m2!3d18.4450817!4d73.8233352!16s%2Fg%2F11svdtwcn9?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D"
-      width="100%"
-      height="450"
-      style="border:0;"
-      allowfullscreen=""
-      loading="lazy">
-    </iframe>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
   </div>
-</section>
-<!-- end map section -->
-    <div class="container pt-5 pb-4">
-        <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-                <a href="index.html">
-                    <h4 class="text-white fw-bold fw-bold d-block">DC<span class="text-secondary">Supply Project</span> </h4>
-                </a>
-                <p class="mt-4 text-light">Don’t miss out on this chance to shape your future. Apply now and embark on an exciting journey with us!</p>
-                <!-- <div class="d-flex hightech-link m-0">
-                    <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-primary"></i></a>
-                    <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-twitter text-primary"></i></a>
-                    <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-instagram text-primary"></i></a>
-                    <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
-                </div> -->
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <a href="#" class="h3 text-white fw-bold">Short Link</a>
-                <div class="mt-4 d-flex flex-column short-link">
-                    <a href="about.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>About us</a>
-                    <a href="student_contact.php" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact us</a>
-                    <a href="login.php" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy</a>
-                    <a href="navtara.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Blog</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <a href="#" class="h3 text-white fw-bold">Help Link</a>
-                <div class="mt-4 d-flex flex-column help-link">
-                    <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Terms Of use</a>
-                    <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy Policy</a>
-                    <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Helps</a>
-                    <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>FQAs</a>
-                    <a href="student_contact.php" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <a href="#" class="h3 text-white fw-bold">Contact Us</a>
-                <div class="text-white mt-4 d-flex flex-column contact-link">
-                    <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Audumbar Complex B, Steel floor, s-21 control Shree Control' Chowk</a>
-                    <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i>+91 7709641406</a>
-                    <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> navatrainternship@gmail.com</a>
-                </div>
-            </div>
-        </div>
-        <hr class="text-light mt-5 mb-4">
-        <div class="row">
-            <div class="col-md-6 text-center text-md-start">
-                <span class="text-light"><a href="#" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>DC Supply Project </a>, All right reserved.</span>
-            </div>
+  <br><br><br>
+
+<!-- card group start -->
+ <div class="card-container">
+    <div class="card">
+        <img src="images/hardware1.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Design of a Mini Hydraulic Press</h3>
+            <p class="card-description">Mini Hydraulic Presses are designed to be compact and portable, making them ideal for small workshops and hobbyists. </p>
+            <a href="mechanical.html" class="card-button">Explore More</a>
         </div>
     </div>
-      
+    <div class="card">
+        <img src="images/hardware2.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Design of a Pneumatic Actuator</h3>
+            <p class="card-description">The design must consider the required force and speed of the actuator, as well as the load it will be operating.</p>
+            <a href="mech2.html" class="card-button">Explore More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/hardware3.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Design of a Smart Drone Frame</h3>
+            <p class="card-description">The drone can be equipped with high-resolution cameras and sensors to inspect bridges, buildings, and other infrastructure</p></p>
+            <a href="mech3.html" class="card-button">Explore More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/hardware4.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Design of an Electric Go-Kart</h3>
+            <p class="card-description">The electric go-kart is a single-seater, environmentally friendly, and energy-efficient vehicle designed for recreational purposes.</p>
+            <a href="mech4.html" class="card-button">Explore More</a>
+        </div>
+    </div>
 </div>
 
-<!-- Footer end -->
+
+<div class="yellow-division"></div>
+  <!-- card group end -->
+
+<!-- List -->
+<div class="container">
+    <div class="division">
+        <h2 style="color: black;">Hardware Projects</h2>
+        <ol class="animated-list">
+            <li>Home Automation System</li>
+            <li>Smart Traffic Management System</li>
+            <li>Automated Plant Watering System</li>
+            <li>IoT-Based Weather Station</li>
+            <li>RFID-Based Attendance System</li>
+            <li>Smart Energy Meter</li>
+            <li>Obstacle Avoiding Robot</li>
+            <li>Gesture Controlled Robot</li>
+            <li>Voice Controlled Home Assistant</li>
+            <li>Smart Mirror with Display</li>
+            <li>Automatic Room Light Controller</li>
+            <li>Health Monitoring Wearable Device</li>
+            <li>Smart Locking System</li>
+            <li>Gesture-Based Wheelchair</li>
+            <li>Remote Patient Monitoring System</li>
+            <li>Wireless Charging Station</li>
+            <li>Smart Waste Management System</li>
+            <li>DIY Drone</li>
+            <li>Smart Farming System</li>
+            <li>Automated Pet Feeder</li>
+            <li>Smart Security Surveillance System</li>
+            <li>Temperature and Humidity Monitoring System</li>
+            <li>DIY Smartwatch</li>
+            <li>Solar-Powered USB Charger</li>
+            <li>Smart Traffic Light System</li>
+            <li>Home Intruder Alarm System</li>
+            <li>Automated Blind Control System</li>
+            <li>Smart Bike Lock</li>
+            <li>Smart Energy Harvesting System</li>
+            <li>Wireless Home Theater System</li>
+            <li>Portable Air Quality Monitor</li>
+            <li>Smart Refrigerator with Inventory Tracking</li>
+            <li>LED Cube Display</li>
+            <li>Voice-Controlled Car</li>
+            <li>Wearable Fitness Tracker</li>
+            <li>Automated Garden System</li>
+            <li>Smart Fire Alarm System</li>
+            <li>Automated Coffee Brewing Machine</li>
+            <li>Arduino-Based Smart Doorbell</li>
+            <li>Gesture-Controlled Home Appliances</li>
+            <li>Smart Aquarium System</li>
+            <li>Remote-Controlled Car</li>
+            <li>Voice-Activated Light Switch</li>
+            <li>Digital Smart Clock with Weather Info</li>
+            <li>Smart Heating and Cooling System</li>
+            <li>Wireless Weather Monitoring Station</li>
+            <li>Energy Monitoring Smart Plug</li>
+            <li>Custom Smart Home Dashboard</li>
+            <li>Gesture-Based Presentation Controller</li>
+            <li>RFID-Based Smart Wallet</li>
+            <li>Bluetooth-Enabled Smart Key Finder</li>
+            <li>Arduino-Based Home Automation</li>
+            <li>Smart Garden Monitoring System</li>
+            <li>IoT-Based Smart Refrigerator</li>
+            <li>Solar-Powered Weather Station</li>
+            <li>Wireless Network Monitoring Tool</li>
+            <li>Smart Home Energy Management System</li>
+            <li>Automated Curtain System</li>
+            <li>Gesture-Controlled Lighting System</li>
+            <li>Smart Water Leak Detector</li>
+            <li>Portable Solar Power Bank</li>
+            <li>Smart Dog Collar with GPS Tracking</li>
+            <li>Interactive LED Table</li>
+            <li>Home Energy Monitoring Dashboard</li>
+            <li>Wireless Charging Desk Lamp</li>
+            <li>Automated Pet Door</li>
+            <li>Smart Washing Machine</li>
+            <li>IoT-Based Home Security System</li>
+            <li>Customizable Smart Fitness Band</li>
+            <li>Smart Gardening Assistant</li>
+            <li>Automated Sprinkler System</li>
+            <li>Voice-Controlled Virtual Assistant</li>
+            <li>Wireless Car Battery Monitor</li>
+            <li>Digital Smart Locker</li>
+            <li>Custom Home Assistant Robot</li>
+        </ol>
+    </div>
+</div>
+<!-- Division B -->
+<div class="division">
+    <h2 style="color: black;">Final Year Hardware Projects</h2>
+    <ol class="animated-list">
+        <li>IoT-Based Smart Home System</li>
+        <li>Automated Plant Watering System</li>
+        <li>Gesture-Controlled Robotic Arm</li>
+        <li>Smart Traffic Light System</li>
+        <li>RFID-Based Attendance System</li>
+        <li>Home Automation Using Arduino</li>
+        <li>Voice-Controlled Home Automation</li>
+        <li>Wireless Surveillance System</li>
+        <li>Smart Energy Meter</li>
+        <li>Automatic Street Light Control System</li>
+        <li>Fire Alarm System Using Smoke Detector</li>
+        <li>Smart Mirror with Weather Display</li>
+        <li>Automated Waste Segregation System</li>
+        <li>Heartbeat Monitoring System Using Arduino</li>
+        <li>Smart Water Quality Monitoring System</li>
+        <li>Smart Lock System Using Biometric Fingerprint</li>
+        <li>Obstacle Avoiding Robot</li>
+        <li>Remote-Controlled Car Using Arduino</li>
+        <li>Temperature and Humidity Monitoring System</li>
+        <li>Solar-Powered Battery Charger</li>
+        <li>Smart Health Monitoring System</li>
+        <li>Wireless Charging Station</li>
+        <li>Biometric Attendance System</li>
+        <li>Home Security Alarm System</li>
+        <li>Smart Agriculture Monitoring System</li>
+        <li>RFID-Based Vehicle Tracking System</li>
+        <li>3D Printed Robotic Hand</li>
+        <li>Smart Refrigerator Using IoT</li>
+        <li>Automated Pet Feeder System</li>
+        <li>LED Display Board Controlled by Bluetooth</li>
+        <li>Smart Parking System</li>
+        <li>Power Generation Using Footstep</li>
+        <li>Temperature-Controlled Fan</li>
+        <li>Smart Air Quality Monitoring System</li>
+        <li>Smart Gas Leak Detector</li>
+        <li>Smart Traffic Monitoring System Using Image Processing</li>
+        <li>Wireless Home Security System</li>
+        <li>Bluetooth-Controlled Robot</li>
+        <li>Smart Fire Extinguisher System</li>
+        <li>Automated Garden Irrigation System</li>
+        <li>Smart Irrigation System Using Soil Moisture Sensor</li>
+        <li>Energy-Efficient LED Lighting System</li>
+        <li>Real-Time Location Tracking System for Pets</li>
+        <li>Smart Bicycle Lock System</li>
+        <li>Voice-Controlled Wheelchair</li>
+        <li>Smart Home Surveillance Drone</li>
+        <li>Face Recognition Door Lock System</li>
+        <li>Automated Weather Station</li>
+        <li>Smart Doorbell with Camera</li>
+    </ol>
+</div>
+  
+  <br><br>
+
+  <!-- Footer -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="footer_content">
+    
+      </div>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwWL16YO8Yo7IBKlsQtD5NLqE9KdHEUbHFrT6dpfy8urNQvA/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <p>
+        &copy; 2024 All Rights Reserved.
+      </p>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Custom Script -->
+  <script src="js/custom.js"></script>
 </body>
+
 </html>
