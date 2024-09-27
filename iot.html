@@ -43,40 +43,77 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <style>
     .card-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      max-width: 1200px;
-      width: 100%;
-      margin: auto;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 5px;
+    margin: auto;
+}
 
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    justify-content:center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card-description {
+    margin: 10px 0;
+    color: #555;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #fbca47;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+}
+
+.card-button:hover {
+    background-color: #fbca47;
+}
+
+@media (max-width: 768px) {
     .card {
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      transition: transform 0.3s;
-      flex: 1 1 calc(25% - 20px);
-      min-width: 250px;
+        width: calc(50% - 20px); /* Two cards per row */
     }
+}
 
-    .card:hover {
-      transform: translateY(-10px);
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* One card per row */
     }
-
-    .card img {
-      width: 100%;
-      height: auto;
-    }
-
-    .card h3 {
-      margin: 15px;
-    }
-
-    .card p {
-      margin: 0 15px 15px;
-    }
+}
 
     /* list */
     .container {
@@ -233,26 +270,39 @@
 <!-- card group start -->
 <div class="card-container">
     <div class="card">
-        <img src="images/android1.jpg" alt="Card Image 1">
-        <h3>E-commerce Website</h3>
-        <p>A platform to buy and sell products online, with features like shopping carts, payment gateways, and user accounts.</p>
+        <img src="images/iot1.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">IOT Ardiono</h3>
+            <p class="card-description">Arduino, being an open -source electronics platform, provides a wide range of boards and tools that can be used to create IoT projects.</p>
+            <a href="iot.html" class="card-button">Explore More</a>
+        </div>
     </div>
     <div class="card">
-        <img src="images/android2.jpg" alt="Card Image 2">
-        <h3>Portfolio Website</h3>
-        <p>A personal website to showcase your skills, projects, and achievements, tailored to attract potential employers or clients.</p>
+        <img src="images/iot2.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">ESP32</h3>
+            <p class="card-description"> It is designed to be used in a wide range of applications, including IoT devices, wearable electronics, and robotics</p>
+            <a href="ESP.html" class="card-button">Explore More</a>
+        </div>
     </div>
     <div class="card">
-        <img src="images/android3.jpg" alt="Card Image 3">
-        <h3>Blogging Platform</h3>
-        <p>A web application for writing, sharing, and commenting on blog posts, with user authentication and categorization features.</p>
+        <img src="images/iot3.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Robotic Hand</h3>
+            <p class="card-description">A robotic hand is a mechanical device that is designed to mimic the function and movement of a human hand.</p></p>
+            <a href="robotichand.html" class="card-button">Explore More</a>
+        </div>
     </div>
     <div class="card">
-        <img src="images/android4.jpg" alt="Card Image 4">
-        <h3>Social Media App</h3>
-        <p>An interactive platform for users to connect, share content, and engage with friends through posts, comments, and likes.</p>
+        <img src="images/iot4.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Raspberrypi</h3>
+            <p class="card-description">It is a series of small, low-cost, and highly capable single-board computers (SBCs) designed to promote coding, computer science, and DIY electronics projects.</p>
+            <a href="raspberry.html" class="card-button">Explore More</a>
+        </div>
     </div>
 </div>
+
 
 <div class="yellow-division"></div>
   <!-- card group end -->
@@ -260,115 +310,313 @@
 <!-- List -->
 <div class="container">
     <div class="division">
-        <h2 style="color: black;">IoT Electrical Projects</h2>
+        <h2 style="color: black;">Diploma Projects</h2>
         <ol class="animated-list">
-            <li>IoT-Based Smart Energy Management System</li>
-            <li>Automated Smart Metering System</li>
-            <li>Smart Home Automation System Using IoT</li>
-            <li>IoT-Based Smart Irrigation System</li>
-            <li>Wireless Sensor Network for Energy Monitoring</li>
-            <li>IoT-Enabled Energy Harvesting System</li>
-            <li>Smart Power Management System Using IoT</li>
-            <li>IoT-Based Temperature and Humidity Control System</li>
-            <li>Remote Monitoring of Electrical Equipment Using IoT</li>
-            <li>IoT-Based Smart Grid Technologies</li>
-            <li>Smart Lighting System Controlled by IoT</li>
-            <li>IoT-Based Home Energy Monitoring System</li>
-            <li>Smart Energy Distribution Board Using IoT</li>
-            <li>IoT-Enabled Electric Vehicle Charging Station</li>
-            <li>IoT-Based Fault Detection in Electrical Circuits</li>
-            <li>IoT-Driven Automated Water Level Control System</li>
-            <li>Smart Traffic Management System Using IoT</li>
-            <li>IoT-Based Smart Parking System</li>
-            <li>Remote-Controlled Electrical Appliances via IoT</li>
-            <li>IoT-Enabled Energy Consumption Dashboard</li>
-            <li>Wireless Energy Meter with IoT Connectivity</li>
-            <li>Smart Home Control with Voice Recognition and IoT</li>
-            <li>IoT-Based Wind Energy Monitoring System</li>
-            <li>IoT-Driven Agriculture Monitoring System</li>
-            <li>Smart Metering for Renewable Energy Sources</li>
-            <li>IoT-Based Industrial Automation System</li>
-            <li>Low-Cost IoT Oscilloscope</li>
-            <li>IoT-Based Battery Management System</li>
-            <li>Smart Environmental Monitoring System Using IoT</li>
-            <li>IoT-Based Real-Time Energy Consumption Tracking</li>
-            <li>Smart Grid Monitoring System Using IoT</li>
-            <li>IoT-Enabled Home Security System</li>
-            <li>Smart Electrical Outlet with IoT Monitoring</li>
-            <li>IoT-Based Voice-Controlled Home Appliances</li>
-            <li>Automated Load Shedding System Using IoT</li>
-            <li>IoT-Based Battery Backup System for Home Appliances</li>
-            <li>Graphical User Interface for IoT-Based Electrical Measurements</li>
-            <li>IoT-Enabled Smart Energy Metering System</li>
-            <li>Interactive IoT Dashboard for Energy Monitoring</li>
-            <li>Automated Fault Detection System Using IoT</li>
-            <li>IoT-Based Electric Motor Protection System</li>
-            <li>IoT-Enabled Smart Energy Conservation Techniques</li>
-            <li>Wireless Control of Home Appliances Using IoT</li>
-            <li>Smart Home Lighting Control with IoT Technology</li>
-            <li>IoT-Based Wind Turbine Monitoring System</li>
-            <li>IoT-Enabled Low-Cost Energy Analyzer</li>
-            <li>Remote Power Switching System Using IoT</li>
+          <li>Smart Home Automation System</li>
+          <li>Weather Monitoring Station</li>
+          <li>IoT-based Smart Irrigation System</li>
+          <li>Smart Parking System</li>
+          <li>Home Security System with Motion Detection</li>
+          <li>Smart Waste Management System</li>
+          <li>Remote Health Monitoring System</li>
+          <li>Smart Energy Meter</li>
+          <li>IoT-based Traffic Management System</li>
+          <li>Smart Air Quality Monitoring System</li>
+          <li>Automated Pet Feeder</li>
+          <li>IoT-enabled Smart Garden</li>
+          <li>Smart Light Control System</li>
+          <li>Remote Weather Station with Alerts</li>
+          <li>Smart Fire Detection System</li>
+          <li>IoT-based Water Quality Monitoring</li>
+          <li>Energy Consumption Monitoring System</li>
+          <li>Smart Door Lock System</li>
+          <li>IoT-based Soil Moisture Monitoring</li>
+          <li>Automated Greenhouse Control</li>
+          <li>Smart Traffic Light Control System</li>
+          <li>Remote Controlled Home Appliances</li>
+          <li>Smart Health Monitoring for Elderly</li>
+          <li>IoT-based Smart Refrigerator</li>
+          <li>Automated LED Lighting System</li>
+          <li>Smart Curtain Control System</li>
+          <li>IoT-enabled Smart Metering</li>
+          <li>Smart Bluetooth Speaker System</li>
+          <li>Smart Weather Forecasting System</li>
+          <li>Remote Plant Monitoring System</li>
+          <li>IoT-based Smart Watch</li>
+          <li>Energy-efficient Smart Home System</li>
+          <li>Smart Traffic Surveillance System</li>
+          <li>IoT-based Home Automation with Voice Control</li>
+          <li>Smart Irrigation System with Rain Sensor</li>
+          <li>IoT-enabled Smart Bicycle</li>
+          <li>Remote Asset Tracking System</li>
+          <li>Smart Mood Lighting System</li>
+          <li>IoT-based Health Fitness Tracker</li>
+          <li>Automated Fish Feeding System</li>
+          <li>Smart School Attendance System</li>
+          <li>IoT-enabled Smart Classroom</li>
+          <li>Personalized Smart Alarm System</li>
+          <li>Smart Energy Management System</li>
+          <li>IoT-based Smart Mirror</li>
+          <li>Automated Home Gardening System</li>
+          <li>Smart Vending Machine</li>
+          <li>IoT-based Emergency Response System</li>
+          <li>Smart Wheelchair Navigation System</li>
+          <li>IoT-enabled Air Purifier</li>
+          <li>Smart HVAC System</li>
+          <li>IoT-based Fitness Equipment</li>
+          <li>Smart Alarm System with Notifications</li>
+          <li>IoT-enabled Noise Monitoring System</li>
+          <li>Smart Temperature Control System</li>
+          <li>IoT-based Personal Safety Device</li>
+          <li>Automated Pet Tracking System</li>
+          <li>Smart Queue Management System</li>
+          <li>IoT-enabled Home Energy Audit</li>
+          <li>Smart Remote Control for Appliances</li>
+          <li>IoT-based Smart Health Assistant</li>
+          <li>Automated Drone Surveillance System</li>
+          <li>IoT-enabled Fitness Band</li>
+          <li>Smart Sleep Monitoring System</li>
+          <li>IoT-based Child Safety Monitor</li>
+          <li>Automated Watering System for Plants</li>
+          <li>Smart Community Parking System</li>
+          <li>IoT-enabled Shopping Cart</li>
+          <li>Smart Mobility Assistance System</li>
+          <li>IoT-based Emergency Kit Monitor</li>
+          <li>Automated Sunlight Tracking System</li>
+          <li>Smart Campus Navigation System</li>
+          <li>IoT-enabled Public Transport Monitoring</li>
+          <li>Smart Elderly Care System</li>
+          <li>IoT-based Indoor Navigation System</li>
+          <li>Automated Weather Prediction System</li>
+          <li>Smart Building Management System</li>
+          <li>IoT-enabled Cargo Tracking System</li>
+          <li>Smart Trolley for Supermarkets</li>
+          <li>IoT-based Plant Disease Detection</li>
+          <li>Automated Emergency Notification System</li>
+          <li>Smart Coffee Machine</li>
+          <li>IoT-enabled Smart Bed</li>
+          <li>Smart Bicycle Lock System</li>
+          <li>IoT-based Automated Feedback System</li>
+          <li>Smart Disaster Alert System</li>
+          <li>IoT-enabled Fitness Assessment Tool</li>
+          <li>Smart Music System</li>
+          <li>IoT-based Building Temperature Regulation</li>
+          <li>Automated Home Health Care System</li>
+          <li>Smart Vehicle Monitoring System</li>
+          <li>IoT-enabled Gesture Control System</li>
+          <li>Smart Plant Growth Monitoring System</li>
+          <li>IoT-based Noise Level Monitoring System</li>
+          <li>Automated Shopping Assistant</li>
+          <li>Smart Waste Bin with Fill Level Monitoring</li>
+          <li>IoT-enabled Personal Security Device</li>
+          <li>Smart Portable Charger</li>
+          <li>IoT-based Smart Pet Collar</li>
+          <li>Automated Health Risk Assessment System</li>
+          <li>Smart Public Library Management System</li>
+          <li>IoT-enabled Personal Assistant</li>
         </ol>
     </div>
 </div>
-
 <!-- Division B -->
 <div class="division">
-    <h2 style="color: black;">Final Year IoT Electrical Projects</h2>
+    <h2 style="color: black;">Final Year Projects</h2>
     <ol class="animated-list">
-        <li>Smart Energy Management System with IoT</li>
-        <li>Automated IoT Power Distribution System</li>
-        <li>Renewable Energy Sources Integration Using IoT</li>
-        <li>Smart IoT Grid Technologies for Energy Management</li>
-        <li>High-Efficiency IoT Solar Inverter</li>
-        <li>Wireless Power Transfer System with IoT Integration</li>
-        <li>IoT-Based Smart Metering for Energy Consumption Monitoring</li>
-        <li>PLC-Based Industrial Automation with IoT</li>
-        <li>IoT-Controlled Automatic Voltage Stabilizer</li>
-        <li>Digital Power Analyzer with IoT Connectivity</li>
-        <li>Microcontroller-Based IoT Home Automation System</li>
-        <li>Energy Harvesting from Environmental Sources Using IoT</li>
-        <li>IoT-Based Battery Management System for Electric Vehicles</li>
-        <li>IoT-Enabled Smart Grid Monitoring System</li>
-        <li>Electric Vehicle Battery Charger with IoT</li>
-        <li>Automated Home Energy Management System Using IoT</li>
-        <li>Single-Phase Induction Motor Control via IoT</li>
-        <li>IoT-Based Smart Load Balancing System for Electrical Networks</li>
-        <li>IoT-Controlled Induction Heating System for Cooking</li>
-        <li>Automated Traffic Control System Using IoT</li>
-        <li>IoT-Based Solar-Powered Water Pumping System</li>
-        <li>Smart Traffic Signal System with IoT</li>
-        <li>Wireless Sensor Network for Environmental Monitoring Using IoT</li>
-        <li>IoT-Enabled Energy Efficient Street Lighting System</li>
-        <li>Microcontroller-Based IoT Automatic Street Light Control</li>
-        <li>Smart Home Lighting Control System Using IoT Technology</li>
-        <li>Automated IoT Electrical Circuit Breaker System</li>
-        <li>Robust IoT Energy Meter for Industrial Applications</li>
-        <li>Voltage and Current Data Logging System Using IoT</li>
-        <li>IoT-Based Induction Motor Speed Control System</li>
-        <li>Microcontroller-Based Home Energy Monitoring System with IoT</li>
-        <li>Wireless Communication System for Smart Grids Using IoT</li>
-        <li>IoT-Based Temperature and Humidity Control System</li>
-        <li>Electricity Theft Detection System Using IoT</li>
-        <li>Real-Time Monitoring System for Solar Panels Using IoT</li>
-        <li>High-Efficiency IoT LED Lighting System</li>
-        <li>Smart Home Energy Dashboard Using IoT</li>
-        <li>Inductive Coupling for Wireless Charging with IoT</li>
-        <li>Smart IoT Irrigation Control System for Agriculture</li>
-        <li>Wireless Smart Home Control System Using IoT</li>
-        <li>Automatic Water Level Control System Using IoT Sensors</li>
-        <li>IoT-Based Smart Building Energy Management System</li>
-        <li>Electricity Consumption Prediction System Using IoT</li>
-        <li>Portable IoT Solar Power Station</li>
-        <li>IoT-Based Smart Electrical Outlet with Energy Monitoring</li>
-        <li>Adaptive Lighting System for Smart Homes Using IoT</li>
-        <li>Industrial Automation Using IoT and SCADA</li>
-        <li>Voice-Controlled Home Appliances Using IoT</li>
-        <li>Energy Efficient UPS System Design with IoT</li>
-        <li>Automated Control System for Power Generation Using IoT</li>
+        <li>Smart City Management System</li>
+        <li>Online Examination System</li>
+        <li>Healthcare Management System</li>
+        <li>Library Management System</li>
+        <li>Online Food Ordering System</li>
+        <li>Distributed File System</li>
+        <li>IoT-Based Home Automation System</li>
+        <li>Real-Time Chat Application</li>
+        <li>Virtual Reality E-commerce Platform</li>
+        <li>Blockchain-Based Voting System</li>
+        <li>Travel Planning Application</li>
+        <li>Augmented Reality Application for Shopping</li>
+        <li>Employee Management System</li>
+        <li>Data Visualization Dashboard</li>
+        <li>Online Auction System</li>
+        <li>Smart Waste Management System</li>
+        <li>Personal Health Record Management System</li>
+        <li>Online Ticket Reservation System</li>
+        <li>Online Music Streaming Service</li>
+        <li>Collaborative Learning Platform</li>
+        <li>Smart Agriculture System</li>
+        <li>Web-Based Travel Agency</li>
+        <li>Online Grocery Delivery System</li>
+        <li>Parking Management System</li>
+        <li>Online Learning Portal</li>
+        <li>Insurance Management System</li>
+        <li>Task Automation Web Application</li>
+        <li>Online Job Search Platform</li>
+        <li>Social Networking App for Professionals</li>
+        <li>Fitness and Diet Tracking Application</li>
+        <li>Smart Traffic Management System</li>
+        <li>Web-Based Inventory Management System</li>
+        <li>Online Marketplace for Services</li>
+        <li>Cloud-Based File Storage System</li>
+        <li>Online Collaboration Tool for Teams</li>
+        <li>Smart Inventory Management System</li>
+        <li>Online Learning Assessment System</li>
+        <li>Interactive Language Learning Platform</li>
+        <li>Remote Healthcare Monitoring System</li>
+        <li>Web-Based Fitness Coaching Platform</li>
+        <li>Digital Asset Management System</li>
+        <li>Online Fitness Challenge Platform</li>
+        <li>Customer Relationship Management (CRM) System</li>
+        <li>Virtual Event Management System</li>
+        <li>Web-Based Donation Platform</li>
+        <li>Online Coding Learning Platform</li>
+        <li>Social Impact Analysis Tool</li>
+        <li>Web-Based Travel Journal Application</li>
+        <li>Online Product Comparison Platform</li>
+        <li>Smart Energy Management System</li>
+        <li>Digital Marketing Analytics Dashboard</li>
+        <li>Online Language Translation Tool</li>
+        <li>Web-Based Digital Business Card Generator</li>
+        <li>Interactive Presentation Tool</li>
+        <li>Website Performance Monitoring Tool</li>
+        <li>Web-Based Supply Chain Management System</li>
+        <li>Online Community Engagement Platform</li>
+        <li>Dynamic Website Template Generator</li>
+        <li>Web-Based Student Management System</li>
+        <li>Intelligent Chatbot for Customer Support</li>
+        <li>Interactive E-Learning Module</li>
+        <li>Web-Based Personal Finance Tracker</li>
+        <li>Online Recipe Recommendation System</li>
+        <li>Web-Based Project Management Tool</li>
+        <li>Online Real Estate Management System</li>
+        <li>Social Media Analytics Tool</li>
+        <li>Web-Based Bug Tracking System</li>
+        <li>Online Event Ticketing System</li>
+        <li>Interactive Online Portfolio Website</li>
+        <li>Remote Collaboration for Software Development</li>
+        <li>Web-Based Smart Agriculture Monitoring System</li>
+        <li>Online Fitness Tracker with Diet Plans</li>
+        <li>Website for Crowdsourcing Ideas</li>
+        <li>Web-Based Performance Evaluation System</li>
+        <li>Online Plant Care Management System</li>
+        <li>Personalized Learning Experience Platform</li>
+        <li>Web-Based Talent Management System</li>
+        <li>Online Fashion Store with AR Fitting Room</li>
+        <li>Interactive Travel Itinerary Builder</li>
+        <li>Web-Based Time Management Tool</li>
+        <li>Social Media Integration for E-commerce Sites</li>
+        <li>Online Property Rental Management System</li>
+        <li>Web-Based Event Planning Tool</li>
+        <li>Online Language Proficiency Assessment</li>
+        <li>Dynamic Content Management System</li>
+        <li>Web-Based Charity Fundraising Platform</li>
+        <li>Online Service Appointment Booking System</li>
+        <li>Remote Learning Management System</li>
+        <li>Online Gardening Community and Resources</li>
+        <li>Interactive Digital Marketing Campaign Planner</li>
+        <li>Website for Local Farmers' Market</li>
+        <li>Online Fitness Challenges and Competitions</li> <li>Smart Home Automation System</li>
+        <li>Weather Monitoring Station</li>
+        <li>IoT-based Smart Irrigation System</li>
+        <li>Smart Parking System</li>
+        <li>Home Security System with Motion Detection</li>
+        <li>Smart Waste Management System</li>
+        <li>Remote Health Monitoring System</li>
+        <li>Smart Energy Meter</li>
+        <li>IoT-based Traffic Management System</li>
+        <li>Smart Air Quality Monitoring System</li>
+        <li>Automated Pet Feeder</li>
+        <li>IoT-enabled Smart Garden</li>
+        <li>Smart Light Control System</li>
+        <li>Remote Weather Station with Alerts</li>
+        <li>Smart Fire Detection System</li>
+        <li>IoT-based Water Quality Monitoring</li>
+        <li>Energy Consumption Monitoring System</li>
+        <li>Smart Door Lock System</li>
+        <li>IoT-based Soil Moisture Monitoring</li>
+        <li>Automated Greenhouse Control</li>
+        <li>Smart Traffic Light Control System</li>
+        <li>Remote Controlled Home Appliances</li>
+        <li>Smart Health Monitoring for Elderly</li>
+        <li>IoT-based Smart Refrigerator</li>
+        <li>Automated LED Lighting System</li>
+        <li>Smart Curtain Control System</li>
+        <li>IoT-enabled Smart Metering</li>
+        <li>Smart Bluetooth Speaker System</li>
+        <li>Smart Weather Forecasting System</li>
+        <li>Remote Plant Monitoring System</li>
+        <li>IoT-based Smart Watch</li>
+        <li>Energy-efficient Smart Home System</li>
+        <li>Smart Traffic Surveillance System</li>
+        <li>IoT-based Home Automation with Voice Control</li>
+        <li>Smart Irrigation System with Rain Sensor</li>
+        <li>IoT-enabled Smart Bicycle</li>
+        <li>Remote Asset Tracking System</li>
+        <li>Smart Mood Lighting System</li>
+        <li>IoT-based Health Fitness Tracker</li>
+        <li>Automated Fish Feeding System</li>
+        <li>Smart School Attendance System</li>
+        <li>IoT-enabled Smart Classroom</li>
+        <li>Personalized Smart Alarm System</li>
+        <li>Smart Energy Management System</li>
+        <li>IoT-based Smart Mirror</li>
+        <li>Automated Home Gardening System</li>
+        <li>Smart Vending Machine</li>
+        <li>IoT-based Emergency Response System</li>
+        <li>Smart Wheelchair Navigation System</li>
+        <li>IoT-enabled Air Purifier</li>
+        <li>Smart HVAC System</li>
+        <li>IoT-based Fitness Equipment</li>
+        <li>Smart Alarm System with Notifications</li>
+        <li>IoT-enabled Noise Monitoring System</li>
+        <li>Smart Temperature Control System</li>
+        <li>IoT-based Personal Safety Device</li>
+        <li>Automated Pet Tracking System</li>
+        <li>Smart Queue Management System</li>
+        <li>IoT-enabled Home Energy Audit</li>
+        <li>Smart Remote Control for Appliances</li>
+        <li>IoT-based Smart Health Assistant</li>
+        <li>Automated Drone Surveillance System</li>
+        <li>IoT-enabled Fitness Band</li>
+        <li>Smart Sleep Monitoring System</li>
+        <li>IoT-based Child Safety Monitor</li>
+        <li>Automated Watering System for Plants</li>
+        <li>Smart Community Parking System</li>
+        <li>IoT-enabled Shopping Cart</li>
+        <li>Smart Mobility Assistance System</li>
+        <li>IoT-based Emergency Kit Monitor</li>
+        <li>Automated Sunlight Tracking System</li>
+        <li>Smart Campus Navigation System</li>
+        <li>IoT-enabled Public Transport Monitoring</li>
+        <li>Smart Elderly Care System</li>
+        <li>IoT-based Indoor Navigation System</li>
+        <li>Automated Weather Prediction System</li>
+        <li>Smart Building Management System</li>
+        <li>IoT-enabled Cargo Tracking System</li>
+        <li>Smart Trolley for Supermarkets</li>
+        <li>IoT-based Plant Disease Detection</li>
+        <li>Automated Emergency Notification System</li>
+        <li>Smart Coffee Machine</li>
+        <li>IoT-enabled Smart Bed</li>
+        <li>Smart Bicycle Lock System</li>
+        <li>IoT-based Automated Feedback System</li>
+        <li>Smart Disaster Alert System</li>
+        <li>IoT-enabled Fitness Assessment Tool</li>
+        <li>Smart Music System</li>
+        <li>IoT-based Building Temperature Regulation</li>
+        <li>Automated Home Health Care System</li>
+        <li>Smart Vehicle Monitoring System</li>
+        <li>IoT-enabled Gesture Control System</li>
+        <li>Smart Plant Growth Monitoring System</li>
+        <li>IoT-based Noise Level Monitoring System</li>
+        <li>Automated Shopping Assistant</li>
+        <li>Smart Waste Bin with Fill Level Monitoring</li>
+        <li>IoT-enabled Personal Security Device</li>
+        <li>Smart Portable Charger</li>
+        <li>IoT-based Smart Pet Collar</li>
+        <li>Automated Health Risk Assessment System</li>
+        <li>Smart Public Library Management System</li>
+        <li>IoT-enabled Personal Assistant</li>
     </ol>
 </div>
+  
   <br><br>
 
   <!-- Footer -->
