@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Thermodynamics and Fluid Mechanics - DC Supply Projects</title>
+  <link rel="icon" type="image/x-icon" href="images/logoDC.jpg">
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
+     .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 5px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    justify-content:center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card-description {
+    margin: 10px 0;
+    color: #555;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #fbca47;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+}
+
+.card-button:hover {
+    background-color: #fbca47;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* One card per row */
+    }
+}
+
+    /* list */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .division {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 550px; /* Fixed width for responsiveness */
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .division:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    .animated-list {
+      padding-left: 20px; /* Indent for ordered list */
+    }
+
+    .animated-list li {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeIn 0.5s forwards;
+    }
+
+    .animated-list li:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .animated-list li:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .animated-list li:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    .animated-list li:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+
+    .animated-list li:nth-child(5) {
+      animation-delay: 0.5s;
+    }
+
+    .animated-list li:nth-child(6) {
+      animation-delay: 0.6s;
+    }
+
+    .animated-list li:nth-child(7) {
+      animation-delay: 0.7s;
+    }
+
+    .animated-list li:nth-child(8) {
+      animation-delay: 0.8s;
+    }
+
+    .animated-list li:nth-child(9) {
+      animation-delay: 0.9s;
+    }
+
+    .animated-list li:nth-child(10) {
+      animation-delay: 1s;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center; /* Center align in mobile view */
+      }
+
+      .division {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 400px; /* Maximum width */
+      }
+    }
+    .division {
+        text-align: center; /* Center the text */
+        margin: 20px auto; /* Center the division block itself */
+        width: 80%; /* Adjust the width as needed */
+    }
+
+
+    .yellow-division {
+      background-color: #fbca47; /* Yellow background */
+      height: 50px; /* Fixed height */
+      width: 100%; /* Full width to make it responsive */
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section pt-0">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-0">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logoDC.jpg" class="logo-img">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="do.html"> Privacy </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html"> Blog </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us </a>
+                </li>
+              </ul>
+              <div class="user_option">
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+  <br><br><br>
+
+<!-- card group start -->
+
+
+<div class="card-container">
+    <div class="card">
+        <img src="images/mech3-1.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Design of a Pneumatic System for Automation</h3>
+            <p class="card-description"> A pneumatic system is a type of automation system that uses compressed air to transmit energy and perform tasks.  </p>
+            <!-- <a href="software.html" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/mech3-2.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Investigation of Turbulent Flow in Pipes</h3>
+            <p class="card-description">Investigation of Turbulent Flow in Pipes</p>
+            <!-- <a href="app.html" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/mech3-3.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Investigation of Fluid Flow in Porous Media</h3>
+            <p class="card-description">The investigation of fluid flow in porous media can improve our understanding of the behavior of fluids in complex systems.</p>
+            <!-- <a href="#" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/mech3-4.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Design and Testing of a Stirling Engine</h3>
+            <p class="card-description">Stirling engines can be used for power generation, including electricity generation and mechanical power generation.</p>
+            <!-- <a href="#" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+</div>
+
+
+<div class="yellow-division"></div>
+  <!-- card group end -->
+
+<!-- List -->
+<div class="container">
+    <div class="division">
+        <h2 style="color: black;">Diploma Projects</h2>
+        <ol class="animated-list">
+            <li>Design and Analysis of a Solar Water Heating System</li>
+    <li>Investigation of Heat Transfer in Heat Exchangers</li>
+    <li>Development of a Mini Wind Tunnel for Aerodynamics Testing</li>
+    <li>Study of Thermodynamic Cycles for Refrigeration Systems</li>
+    <li>Design of a Water Cooling System for Industrial Applications</li>
+    <li>Analysis of Fluid Flow in Pipelines Using Computational Fluid Dynamics</li>
+    <li>Development of an Efficient Heat Pump System</li>
+    <li>Study of the Effects of Viscosity on Fluid Flow</li>
+    <li>Design and Testing of a Stirling Engine</li>
+    <li>Investigation of Natural Convection in Different Fluids</li>
+    <li>Development of a Compressed Air Energy Storage System</li>
+    <li>Study of the Performance of Solar Still for Water Purification</li>
+    <li>Design of an Air-Cooled Condenser for Power Plants</li>
+    <li>Analysis of Compressible Fluid Flow in Nozzles</li>
+    <li>Investigation of the Efficiency of Different Insulation Materials</li>
+    <li>Development of a Prototype of a Heat Recovery System</li>
+    <li>Study of Thermal Conductivity of Composite Materials</li>
+    <li>Design of a Centrifugal Pump and Performance Testing</li>
+    <li>Investigation of Fluid Flow in Porous Media</li>
+    <li>Analysis of the Impact of Surface Roughness on Flow Characteristics</li>
+    <li>Development of a Biogas Generation System</li>
+    <li>Design of a Forced Convection Heat Transfer System</li>
+    <li>Investigation of Airflow Patterns in Ventilation Systems</li>
+    <li>Study of the Effects of Temperature on Gas Viscosity</li>
+    <li>Design of a Thermal Storage System for Solar Applications</li>
+    <li>Development of a Liquid-Liquid Extraction System</li>
+    <li>Investigation of the Performance of Different Turbine Designs</li>
+    <li>Study of Combustion Efficiency in Diesel Engines</li>
+    <li>Design of a Small-Scale Wind Energy Conversion System</li>
+    <li>Analysis of Thermal Expansion in Different Materials</li>
+    <li>Development of a Hydraulic System for Load Lifting</li>
+    <li>Study of the Heat Transfer Coefficient in Forced Convection</li>
+    <li>Design and Testing of a Miniature Rocket Engine</li>
+    <li>Investigation of the Effects of Heat Treatment on Material Properties</li>
+    <li>Development of a Water Jet Pump System</li>
+    <li>Study of the Performance of Different Types of Heat Exchangers</li>
+    <li>Design of a Cooling System for Electronic Components</li>
+    <li>Investigation of Cavitation in Pumps</li>
+    <li>Analysis of the Efficiency of Solar Air Heaters</li>
+    <li>Development of a Smart Thermostat for HVAC Systems</li>
+    <li>Study of the Effects of Altitude on Boiling Point</li>
+    <li>Design of a Thermal Fluid System for Industrial Applications</li>
+    <li>Investigation of the Flow Characteristics of Non-Newtonian Fluids</li>
+    <li>Analysis of the Impact of Air Density on Engine Performance</li>
+    <li>Development of a Heat Transfer Simulation Software</li>
+    <li>Study of the Impact of Humidity on Heat Transfer</li>
+    <li>Design of a Pneumatic System for Automation</li>
+    <li>Investigation of Turbulent Flow in Pipes</li>
+    <li>Analysis of the Thermal Performance of Insulation Materials</li>
+    <li>Development of a Liquid Cooling System for Engines</li>
+    <li>Study of the Relationship Between Pressure and Temperature in Gases</li>
+    <li>Design of a Fluidized Bed Reactor for Chemical Processes</li>
+    <li>Investigation of the Efficiency of Different Turbine Configurations</li>
+    <li>Development of a Water Treatment System Using Membrane Technology</li>
+    <li>Analysis of the Impact of Flow Rate on Heat Exchanger Efficiency</li>
+        </ol>
+    </div>
+</div>
+<!-- Division B -->
+<div class="division">
+    <h2 style="color: black;">Final Year Projects</h2>
+    <ol class="animated-list">
+        <li>Design and Analysis of a Combined Heat and Power System</li>
+    <li>Investigation of Heat Transfer in Advanced Heat Exchangers</li>
+    <li>Development of a Solar-Powered Water Distillation System</li>
+    <li>Modeling and Simulation of a Rankine Cycle for Power Generation</li>
+    <li>Design of an Airflow Measurement System for HVAC Applications</li>
+    <li>Investigation of Thermal Conductivity in Nanofluids</li>
+    <li>Performance Analysis of a Refrigeration Cycle with Alternative Refrigerants</li>
+    <li>Development of a Waste Heat Recovery System for Industrial Processes</li>
+    <li>Study of the Impact of Heat Transfer on Combustion Efficiency</li>
+    <li>Design of a High-Efficiency Solar Collector</li>
+    <li>Analysis of Fluid Flow and Heat Transfer in Microchannels</li>
+    <li>Investigation of the Effects of Flow Geometry on Turbulence</li>
+    <li>Development of a Smart Heat Management System for Electric Vehicles</li>
+    <li>Design and Testing of a Model of a Stirling Engine</li>
+    <li>Study of the Thermodynamic Properties of Biogas as Fuel</li>
+    <li>Design of a Pneumatic Actuator System for Automation</li>
+    <li>Investigation of the Thermal Behavior of Composite Materials</li>
+    <li>Performance Evaluation of a Geothermal Heating System</li>
+    <li>Analysis of Flow Patterns in Aerodynamic Bodies</li>
+    <li>Development of a Prototype for a Solar-Assisted Air Conditioning System</li>
+    <li>Study of the Effect of Pressure on Gas Expansion</li>
+    <li>Design of a Closed-Loop Water Cooling System for Engines</li>
+    <li>Investigation of Fluid Flow in Turbine Blades</li>
+    <li>Development of a Thermal Simulation Software for HVAC Design</li>
+    <li>Analysis of the Efficiency of Different Types of Heat Exchangers</li>
+    <li>Study of the Dynamics of Two-Phase Flow in Pipelines</li>
+    <li>Design and Fabrication of a Small-Scale Wind Turbine</li>
+    <li>Investigation of the Performance of Heat Recovery Steam Generators</li>
+    <li>Development of a Smart Insulation System for Energy Efficiency</li>
+    <li>Study of the Effects of Temperature on Material Properties</li>
+    <li>Design of a Fluidized Bed Combustor for Biomass</li>
+    <li>Investigation of the Impact of Humidity on Thermal Performance</li>
+    <li>Analysis of the Flow and Heat Transfer Characteristics in Packed Beds</li>
+    <li>Development of a Low-Cost Solar Air Heater</li>
+    <li>Study of the Performance of Centrifugal Pumps in Viscous Fluids</li>
+    <li>Design of a Thermal Energy Storage System Using Phase Change Materials</li>
+    <li>Investigation of Natural Convection in Enclosed Spaces</li>
+    <li>Analysis of the Effects of Scale on Heat Transfer Rates</li>
+    <li>Development of a Hydronic Heating System for Buildings</li>
+    <li>Study of the Impact of Flow Rate on Heat Exchanger Performance</li>
+    <li>Design of a Liquid Cooling System for High-Performance Computers</li>
+    <li>Investigation of Vortex Flow Patterns in Heat Exchangers</li>
+    <li>Analysis of the Efficiency of Passive Cooling Techniques</li>
+    <li>Development of a Model for Energy Loss in HVAC Systems</li>
+    <li>Study of Compressible Flow in Nozzles and Diffusers</li>
+    <li>Design of a Heat Recovery System for Exhaust Gases</li>
+    <li>Investigation of the Effects of Fluid Properties on Flow Behavior</li>
+    <li>Development of a Thermal Control System for Space Applications</li>
+    <li>Study of the Performance of Thermal Insulation Materials</li>
+    <li>Design of a Low-Pressure Steam Generation System</li>
+    <li>Investigation of Fluid Dynamics in Turbulent Flow Conditions</li>
+    <li>Analysis of the Effects of Temperature on Viscosity</li>
+    <li>Development of a Computational Model for Heat Transfer in Fluids</li>
+    <li>Study of the Efficiency of Different Types of Solar Energy Systems</li>
+    <li>Design of a Water-Based Cooling System for Industrial Processes</li>
+</div>
+  
+  <br><br>
+
+  <!-- Footer -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="footer_content">
+    
+      </div>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwWL16YO8Yo7IBKlsQtD5NLqE9KdHEUbHFrT6dpfy8urNQvA/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <p>
+        &copy; 2024 All Rights Reserved.
+      </p>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Custom Script -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

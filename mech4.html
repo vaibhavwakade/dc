@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Control Systems and Automation - DC Supply Projects</title>
+  <link rel="icon" type="image/x-icon" href="images/logoDC.jpg">
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
+     .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 5px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    justify-content:center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card-description {
+    margin: 10px 0;
+    color: #555;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #fbca47;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+}
+
+.card-button:hover {
+    background-color: #fbca47;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* One card per row */
+    }
+}
+
+    /* list */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .division {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 550px; /* Fixed width for responsiveness */
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .division:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    .animated-list {
+      padding-left: 20px; /* Indent for ordered list */
+    }
+
+    .animated-list li {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeIn 0.5s forwards;
+    }
+
+    .animated-list li:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .animated-list li:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .animated-list li:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    .animated-list li:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+
+    .animated-list li:nth-child(5) {
+      animation-delay: 0.5s;
+    }
+
+    .animated-list li:nth-child(6) {
+      animation-delay: 0.6s;
+    }
+
+    .animated-list li:nth-child(7) {
+      animation-delay: 0.7s;
+    }
+
+    .animated-list li:nth-child(8) {
+      animation-delay: 0.8s;
+    }
+
+    .animated-list li:nth-child(9) {
+      animation-delay: 0.9s;
+    }
+
+    .animated-list li:nth-child(10) {
+      animation-delay: 1s;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center; /* Center align in mobile view */
+      }
+
+      .division {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 400px; /* Maximum width */
+      }
+    }
+    .division {
+        text-align: center; /* Center the text */
+        margin: 20px auto; /* Center the division block itself */
+        width: 80%; /* Adjust the width as needed */
+    }
+
+
+    .yellow-division {
+      background-color: #fbca47; /* Yellow background */
+      height: 50px; /* Fixed height */
+      width: 100%; /* Full width to make it responsive */
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section pt-0">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-0">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logoDC.jpg" class="logo-img">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="do.html"> Privacy </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html"> Blog </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us </a>
+                </li>
+              </ul>
+              <div class="user_option">
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+  <br><br><br>
+
+<!-- card group start -->
+
+
+<div class="card-container">
+    <div class="card">
+        <img src="images/mech4-1.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Temperature and Humidity Monitoring System</h3>
+            <p class="card-description">Temperature and humidity monitoring systems require accurate sensors to ensure that the data is reliable.</p>
+            <!-- <a href="software.html" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/mech4-2.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Conveyor Belt Automation System</h3>
+            <p class="card-description">Conveyor belt automation systems will be integrated with Industry 4.0 technologies, including artificial intelligence, machine learning, and the Internet of Things (IoT).</p>
+            <!-- <a href="app.html" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/mech4-3.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Automated Greenhouse Control System</h3>
+            <p class="card-description">An automated greenhouse control system is a type of system that uses sensors, actuators, and control systems to automate the operation of a greenhouse.</p>
+            <!-- <a href="#" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/mech4-4.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title"> Solar Tracking System for Solar Panels</h3>
+            <p class="card-description">
+
+                A solar tracking system is a device that adjusts the angle and orientation of solar panels to optimize their energy output by tracking the movement of the sun.</p>
+            <!-- <a href="#" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+</div>
+
+
+<div class="yellow-division"></div>
+  <!-- card group end -->
+
+<!-- List -->
+<div class="container">
+    <div class="division">
+        <h2 style="color: black;">Diploma Projects</h2>
+        <ol class="animated-list">
+            <li>Design of an Automated Greenhouse Control System</li>
+    <li>Development of a Smart Home Automation System</li>
+    <li>Implementation of PID Control for Temperature Regulation</li>
+    <li>Design of a Robotic Arm Controlled by Arduino</li>
+    <li>Automated Water Level Control System Using Sensors</li>
+    <li>Development of a Conveyor Belt Automation System</li>
+    <li>Design of an Automated Traffic Management System</li>
+    <li>Implementation of a Remote Monitoring System for Machinery</li>
+    <li>Development of a Smart Irrigation System</li>
+    <li>Design of a Robotic Vacuum Cleaner with Obstacle Detection</li>
+    <li>Automated Control of HVAC Systems</li>
+    <li>Design of a Wireless Industrial Automation System</li>
+    <li>Implementation of a DC Motor Speed Control System</li>
+    <li>Development of a Programmable Logic Controller (PLC) System</li>
+    <li>Design of an Automated Sorting System for Materials</li>
+    <li>Implementation of a Home Security Automation System</li>
+    <li>Development of an Autonomous Quadcopter</li>
+    <li>Design of a Temperature and Humidity Monitoring System</li>
+    <li>Automated Control of a Model Train System</li>
+    <li>Development of a Motion Control System for Robotics</li>
+    <li>Design of an Automated Feed System for Livestock</li>
+    <li>Implementation of a Smart Energy Metering System</li>
+    <li>Development of a Robot for Hazardous Material Handling</li>
+    <li>Design of an Automated Chemical Mixing System</li>
+    <li>Implementation of a Smart Parking System</li>
+    <li>Development of an Automatic Plant Watering System</li>
+    <li>Design of a Control System for a Wind Turbine</li>
+    <li>Automated Control of a Home Theater System</li>
+    <li>Development of a Precision CNC Machine Controller</li>
+    <li>Design of a Robotic Arm for Assembly Tasks</li>
+    <li>Implementation of an Intelligent Traffic Signal Control System</li>
+    <li>Development of a Smart Trash Bin with Monitoring System</li>
+    <li>Design of a Mechanical System with Automated Control</li>
+    <li>Implementation of a Real-Time Data Acquisition System</li>
+    <li>Development of a Remote-Controlled Car with Sensors</li>
+    <li>Design of a Safety Monitoring System for Industrial Machines</li>
+    <li>Implementation of an Automated Energy Management System</li>
+    <li>Development of a Control System for a Mobile Robot</li>
+    <li>Design of an Automated Conveyor System with Sorting Mechanism</li>
+    <li>Implementation of a Temperature Control System Using PID</li>
+    <li>Development of a Wearable Health Monitoring System</li>
+    <li>Design of an Automated Fire Alarm System</li>
+    <li>Implementation of a Smart Meter for Water Usage Monitoring</li>
+    <li>Development of a 3D Printing Control System</li>
+    <li>Design of a Remote-Controlled Robotic Hand</li>
+    <li>Implementation of a Control System for a Smart Refrigerator</li>
+    <li>Development of an Automated Patient Monitoring System</li>
+    <li>Design of a Control System for Electric Vehicle Charging</li>
+    <li>Implementation of a Home Appliance Automation System</li>
+    <li>Development of a Smart Load Shedding System</li>
+    <li>Design of a Control System for a Hydraulic Press</li>
+    <li>Implementation of an Automated Security Access System</li>
+    <li>Development of a Control System for a Hydroponic Farm</li>
+    <li>Design of a Solar Tracking System for Solar Panels</li>
+    <li>Implementation of a Remote-Controlled Surveillance Drone</li>
+        </ol>
+    </div>
+</div>
+<!-- Division B -->
+<div class="division">
+    <h2 style="color: black;">Final Year Projects</h2>
+    <ol class="animated-list">
+        <li>Design and Implementation of an Automated Warehouse Management System</li>
+    <li>Development of a Smart Manufacturing Process Control System</li>
+    <li>Control System Design for a Robotic Manipulator</li>
+    <li>Implementation of an Autonomous Mobile Robot for Navigation</li>
+    <li>Development of a Real-Time Industrial Automation System</li>
+    <li>Design of a Predictive Maintenance System Using IoT</li>
+    <li>Automated Control of an Energy-Efficient HVAC System</li>
+    <li>Implementation of a PID Controller for Servo Motor Positioning</li>
+    <li>Development of an Intelligent Traffic Control System Using Machine Learning</li>
+    <li>Design of a Remote Monitoring and Control System for Renewable Energy</li>
+    <li>Control System for Autonomous Underwater Vehicles</li>
+    <li>Development of a Smart Grid Management System</li>
+    <li>Design of a Biometric-Based Access Control System</li>
+    <li>Implementation of a Voice-Controlled Home Automation System</li>
+    <li>Development of a UAV for Agricultural Monitoring and Control</li>
+    <li>Design of a Automated Water Quality Monitoring System</li>
+    <li>Implementation of a Control System for a Variable Speed Drive</li>
+    <li>Development of a Smart Energy Management System for Buildings</li>
+    <li>Design of a Control System for a 3D Printing Machine</li>
+    <li>Automated Quality Inspection System Using Computer Vision</li>
+    <li>Implementation of a Smart Irrigation System Using Sensors</li>
+    <li>Development of a Teleoperation System for Robotic Arms</li>
+    <li>Control System Design for an Electric Vehicle Charging Station</li>
+    <li>Implementation of an Industrial Process Automation System</li>
+    <li>Development of a Collaborative Robot (Cobots) for Assembly Lines</li>
+    <li>Design of an Intelligent Home Security System</li>
+    <li>Implementation of a Real-Time Data Acquisition and Control System</li>
+    <li>Development of a Control System for a Wind Turbine</li>
+    <li>Design of a Temperature Control System for Industrial Processes</li>
+    <li>Automated Control of a Smart Refrigeration System</li>
+    <li>Implementation of a Smart Parking Management System</li>
+    <li>Development of an Automated Plant Growth Monitoring System</li>
+    <li>Design of a Wireless Control System for Industrial Applications</li>
+    <li>Implementation of a Control System for a Hydraulic Actuator</li>
+    <li>Development of a Robotic Arm with Force Feedback Control</li>
+    <li>Design of a Control System for Drones with GPS Navigation</li>
+    <li>Implementation of an Autonomous Delivery Robot</li>
+    <li>Development of a Smart Load Management System for Factories</li>
+    <li>Design of an Automated Conveyor System with Feedback Control</li>
+    <li>Implementation of a Control System for Energy Harvesting Devices</li>
+    <li>Development of a Virtual Reality Training System for Automation</li>
+    <li>Design of an Automated Bioreactor Control System</li>
+    <li>Implementation of a Control System for an Electric Go-Kart</li>
+    <li>Development of a Smart Wearable Device for Health Monitoring</li>
+    <li>Design of a Smart Farming Control System Using IoT</li>
+    <li>Implementation of a Control System for a 6-DOF Robotic Arm</li>
+    <li>Development of a Smart Waste Management System</li>
+    <li>Design of a Home Energy Management System with Automation</li>
+    <li>Implementation of a Control System for Industrial Robots</li>
+    <li>Development of a Smart Climate Control System for Greenhouses</li>
+    <li>Design of a Control System for Automated Guided Vehicles (AGVs)</li>
+    <li>Implementation of a Smart Sensor Network for Manufacturing</li>
+    <li>Development of an Automated Fish Feeding System</li>
+    <li>Design of a Control System for Remote Sensing Applications</li>
+</div>
+  
+  <br><br>
+
+  <!-- Footer -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="footer_content">
+    
+      </div>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwWL16YO8Yo7IBKlsQtD5NLqE9KdHEUbHFrT6dpfy8urNQvA/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <p>
+        &copy; 2024 All Rights Reserved.
+      </p>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Custom Script -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

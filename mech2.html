@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Materials and Manufacturing - DC Supply Projects</title>
+  <link rel="icon" type="image/x-icon" href="images/logoDC.jpg">
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
+     .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 5px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    justify-content:center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card-description {
+    margin: 10px 0;
+    color: #555;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #fbca47;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+}
+
+.card-button:hover {
+    background-color: #fbca47;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* One card per row */
+    }
+}
+
+    /* list */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .division {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 550px; /* Fixed width for responsiveness */
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .division:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    .animated-list {
+      padding-left: 20px; /* Indent for ordered list */
+    }
+
+    .animated-list li {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeIn 0.5s forwards;
+    }
+
+    .animated-list li:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .animated-list li:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .animated-list li:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    .animated-list li:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+
+    .animated-list li:nth-child(5) {
+      animation-delay: 0.5s;
+    }
+
+    .animated-list li:nth-child(6) {
+      animation-delay: 0.6s;
+    }
+
+    .animated-list li:nth-child(7) {
+      animation-delay: 0.7s;
+    }
+
+    .animated-list li:nth-child(8) {
+      animation-delay: 0.8s;
+    }
+
+    .animated-list li:nth-child(9) {
+      animation-delay: 0.9s;
+    }
+
+    .animated-list li:nth-child(10) {
+      animation-delay: 1s;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center; /* Center align in mobile view */
+      }
+
+      .division {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 400px; /* Maximum width */
+      }
+    }
+    .division {
+        text-align: center; /* Center the text */
+        margin: 20px auto; /* Center the division block itself */
+        width: 80%; /* Adjust the width as needed */
+    }
+
+
+    .yellow-division {
+      background-color: #fbca47; /* Yellow background */
+      height: 50px; /* Fixed height */
+      width: 100%; /* Full width to make it responsive */
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section pt-0">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-0">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logoDC.jpg" class="logo-img">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="do.html"> Privacy </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html"> Blog </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us </a>
+                </li>
+              </ul>
+              <div class="user_option">
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+  <br><br><br>
+
+<!-- card group start -->
+
+
+<div class="card-container">
+    <div class="card">
+        <img src="images/mech2-1.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Eco-Friendly Packaging Material</h3>
+            <p class="card-description">Eco-friendly packaging materials are sustainable, biodegradable, and non-toxic materials used to replace traditional packaging</p>
+            <!-- <a href="software.html" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/mech2-2.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Implementation of Lean Manufacturing Techniques</h3>
+            <p class="card-description">The implementation of lean manufacturing techniques involves the systematic elimination of waste and maximization of value-added activities.</p>
+            <!-- <a href="app.html" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/mech2-3.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Development of a Smart Manufacturing System</h3>
+            <p class="card-description">The development of a smart manufacturing system involves the integration of advanced technologies, such as artificial intelligence (AI), Internet of Things (IoT)</p>
+            <!-- <a href="#" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/mech2-4.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Fabrication of a Biodegradable Composite Material</h3>
+            <p class="card-description">The electric go-kart is a single-seater, environmentally friendly, and energy-efficient vehicle designed for recreational purposes.</p>
+            <!-- <a href="#" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+</div>
+
+
+<div class="yellow-division"></div>
+  <!-- card group end -->
+
+<!-- List -->
+<div class="container">
+    <div class="division">
+        <h2 style="color: black;">Diploma Projects</h2>
+        <ol class="animated-list">
+            <li>Design and Fabrication of a Biodegradable Composite Material</li>
+            <li>Investigation of Wear Properties of Coated Cutting Tools</li>
+            <li>Development of a Smart Manufacturing System</li>
+            <li>3D Printing of Polymer-Based Components</li>
+            <li>Analysis of Heat Treatment Processes on Steel</li>
+            <li>Design and Testing of an Automated Welding Machine</li>
+            <li>Fabrication of Metal Matrix Composites</li>
+            <li>Optimization of Injection Molding Parameters</li>
+            <li>Study of Friction Stir Welding Techniques</li>
+            <li>Mechanical Properties of Natural Fiber Composites</li>
+            <li>Development of Lightweight Materials for Automotive Applications</li>
+            <li>Investigation of Corrosion Resistance in Alloys</li>
+            <li>Design and Analysis of a Flexible Manufacturing System</li>
+            <li>Fabrication of Heat-Resistant Materials</li>
+            <li>Implementation of Lean Manufacturing Techniques</li>
+            <li>Investigation of Additive Manufacturing Processes</li>
+            <li>Mechanical Characterization of Hybrid Composites</li>
+            <li>Design of an Eco-Friendly Packaging Material</li>
+            <li>Study of Laser Cutting Parameters on Surface Finish</li>
+            <li>Development of a Robotic Arm for Material Handling</li>
+            <li>Investigation of Nano-Coatings on Metal Surfaces</li>
+            <li>Analysis of Stress Distribution in Composite Beams</li>
+            <li>Design of a Pneumatic Material Handling System</li>
+            <li>Development of Biocompatible Materials for Medical Use</li>
+            <li>Optimization of Sheet Metal Forming Processes</li>
+            <li>Study of Thermal Properties of Insulating Materials</li>
+            <li>Design and Fabrication of a Mini CNC Machine</li>
+            <li>Investigation of Surface Treatments for Tool Life Improvement</li>
+            <li>Development of Smart Textiles for Wearable Technology</li>
+            <li>Study of the Impact of Additives on Polymer Properties</li>
+            <li>Design and Analysis of a Hybrid Power Generation System</li>
+            <li>Optimization of 3D Printing Parameters for Metal Parts</li>
+            <li>Investigation of the Recycling of Composite Materials</li>
+            <li>Fabrication of Low-Cost Solar Panel Frames</li>
+            <li>Study of Sintering Techniques in Powder Metallurgy</li>
+            <li>Development of an Efficient Heat Exchanger Design</li>
+            <li>Analysis of Dissimilar Material Joining Techniques</li>
+            <li>Design and Testing of an Automated Quality Control System</li>
+            <li>Investigation of High-Performance Polymers</li>
+            <li>Development of Lightweight Structural Components</li>
+            <li>Analysis of Bioinspired Materials for Engineering Applications</li>
+            <li>Fabrication and Testing of High-Temperature Resistant Alloys</li>
+            <li>Study of the Mechanical Properties of Graphene Composites</li>
+            <li>Design of a Modular Manufacturing System</li>
+            <li>Investigation of Eco-Friendly Manufacturing Processes</li>
+            <li>Development of a Virtual Prototyping System</li>
+            <li>Analysis of the Effect of Surface Roughness on Friction</li>
+            <li>Study of Smart Alloys and Their Applications</li>
+            <li>Design and Fabrication of a Portable Wind Turbine</li>
+            <li>Investigation of the Impact of Surface Treatments on Fatigue Life</li>
+            <li>Development of an Automated Assembly Line</li>
+            <li>Analysis of Thermal Conductivity in Composite Materials</li>
+            <li>Study of the Mechanical Behavior of Shape Memory Alloys</li>
+            <li>Design of a Flexible Robotic System for Manufacturing</li>
+            <li>Investigation of the Properties of Sustainable Building Materials</li>
+            <li>Fabrication of Smart Sensors for Manufacturing Applications</li>
+        </ol>
+    </div>
+</div>
+<!-- Division B -->
+<div class="division">
+    <h2 style="color: black;">Final Year Projects</h2>
+    <ol class="animated-list">
+        <li>Development of High-Strength Lightweight Alloys for Automotive Applications</li>
+        <li>Fabrication and Characterization of Bio-based Composites</li>
+        <li>Investigation of Additive Manufacturing for Aerospace Components</li>
+        <li>Design and Analysis of a Robotic Welding System</li>
+        <li>Study of Thermoplastic Composite Materials for Structural Applications</li>
+        <li>Optimization of CNC Machining Parameters for Improved Surface Finish</li>
+        <li>Development of a Smart Manufacturing Process Monitoring System</li>
+        <li>Analysis of Mechanical Properties of Nano-Enhanced Materials</li>
+        <li>Design of Sustainable Manufacturing Processes Using Green Materials</li>
+        <li>Fabrication Techniques for Functionally Graded Materials</li>
+        <li>Investigation of Friction Stir Processing for Material Enhancement</li>
+        <li>Design and Fabrication of a Compact Solar Water Heater</li>
+        <li>Study of Corrosion Behavior in Different Coating Materials</li>
+        <li>Analysis of the Impact of Manufacturing Parameters on Composite Properties</li>
+        <li>Development of a Virtual Reality System for Manufacturing Training</li>
+        <li>Design of a Modular 3D Printing System for Customized Products</li>
+        <li>Investigation of Surface Treatment Techniques for Tool Life Improvement</li>
+        <li>Study of Thermal and Mechanical Properties of Hybrid Composites</li>
+        <li>Fabrication and Testing of High-Temperature Resistant Materials</li>
+        <li>Development of an Automated Quality Assurance System</li>
+        <li>Analysis of the Properties of Recycled Materials in Manufacturing</li>
+        <li>Design and Simulation of a Flexible Manufacturing Cell</li>
+        <li>Investigation of the Mechanical Behavior of Shape Memory Alloys</li>
+        <li>Development of Eco-Friendly Packaging Materials from Waste</li>
+        <li>Study of the Effect of Additives on Polymer Blends</li>
+        <li>Design of an Efficient Heat Exchanger for Industrial Applications</li>
+        <li>Investigation of the Role of Microstructures in Material Performance</li>
+        <li>Fabrication of Advanced Ceramic Materials for High-Temperature Applications</li>
+        <li>Development of Smart Coatings for Corrosion Protection</li>
+        <li>Analysis of Bioinspired Materials for Engineering Solutions</li>
+        <li>Design and Testing of a High-Efficiency Gas Turbine Blade</li>
+        <li>Study of the Effect of Grain Size on Metal Strength</li>
+        <li>Investigation of Laser Additive Manufacturing Techniques</li>
+        <li>Development of an Integrated Manufacturing System Using IoT</li>
+        <li>Analysis of Dissimilar Metal Welding Techniques</li>
+        <li>Fabrication of Nano-Coatings for Enhanced Surface Properties</li>
+        <li>Design of a Lightweight Electric Vehicle Chassis</li>
+        <li>Investigation of the Impact of Manufacturing Processes on Fatigue Life</li>
+        <li>Study of the Mechanical Properties of 3D Printed Parts</li>
+        <li>Development of a Sustainable Method for Metal Recycling</li>
+        <li>Design and Fabrication of a Wind Energy Conversion System</li>
+        <li>Investigation of the Mechanical Behavior of Smart Textiles</li>
+        <li>Study of Biocompatible Materials for Medical Devices</li>
+        <li>Analysis of the Performance of Composite Bridge Structures</li>
+        <li>Fabrication and Testing of Thermoelectric Materials for Energy Harvesting</li>
+        <li>Development of a Low-Cost Water Purification System</li>
+        <li>Design of a Multi-Material 3D Printing Process</li>
+        <li>Investigation of the Mechanical Properties of Cement-Based Composites</li>
+        <li>Study of the Effects of Temperature on Material Properties</li>
+        <li>Fabrication of Sustainable Construction Materials</li>
+        <li>Design of an Automated Material Handling System</li>
+        <li>Investigation of Electrical Conductivity in Graphene Composites</li>
+        <li>Analysis of the Effects of Surface Roughness on Friction Coefficient</li>
+        <li>Development of a Hybrid Energy Storage System for Manufacturing</li>
+        <li>Design and Testing of a Robotic Material Sorting System</li>
+        <li>Investigation of 3D Printing for Custom Prosthetic Devices</li>
+</div>
+  
+  <br><br>
+
+  <!-- Footer -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="footer_content">
+    
+      </div>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwWL16YO8Yo7IBKlsQtD5NLqE9KdHEUbHFrT6dpfy8urNQvA/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <p>
+        &copy; 2024 All Rights Reserved.
+      </p>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Custom Script -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
