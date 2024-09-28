@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Raspberrypi - DC Supply Projects</title>
+  <link rel="icon" type="image/x-icon" href="images/logoDC.jpg">
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
+     .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 5px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    justify-content:center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card-description {
+    margin: 10px 0;
+    color: #555;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #fbca47;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+}
+
+.card-button:hover {
+    background-color: #fbca47;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* One card per row */
+    }
+}
+
+    /* list */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .division {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 550px; /* Fixed width for responsiveness */
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .division:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    .animated-list {
+      padding-left: 20px; /* Indent for ordered list */
+    }
+
+    .animated-list li {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeIn 0.5s forwards;
+    }
+
+    .animated-list li:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .animated-list li:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .animated-list li:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    .animated-list li:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+
+    .animated-list li:nth-child(5) {
+      animation-delay: 0.5s;
+    }
+
+    .animated-list li:nth-child(6) {
+      animation-delay: 0.6s;
+    }
+
+    .animated-list li:nth-child(7) {
+      animation-delay: 0.7s;
+    }
+
+    .animated-list li:nth-child(8) {
+      animation-delay: 0.8s;
+    }
+
+    .animated-list li:nth-child(9) {
+      animation-delay: 0.9s;
+    }
+
+    .animated-list li:nth-child(10) {
+      animation-delay: 1s;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center; /* Center align in mobile view */
+      }
+
+      .division {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 400px; /* Maximum width */
+      }
+    }
+    .division {
+        text-align: center; /* Center the text */
+        margin: 20px auto; /* Center the division block itself */
+        width: 80%; /* Adjust the width as needed */
+    }
+
+
+    .yellow-division {
+      background-color: #fbca47; /* Yellow background */
+      height: 50px; /* Fixed height */
+      width: 100%; /* Full width to make it responsive */
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section pt-0">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-0">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logoDC.jpg" class="logo-img">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="do.html"> Privacy </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html"> Blog </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us </a>
+                </li>
+              </ul>
+              <div class="user_option">
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+  <br><br><br>
+
+<!-- card group start -->
+
+
+<div class="card-container">
+    <div class="card">
+        <img src="images/rasp1.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Raspberry Pi IoT Dashboard</h3>
+            <p class="card-description">The dashboard provides a centralized platform to monitor, analyze, and visualize data from sensors </p>
+            <!-- <a href="software.html" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/rasp2.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">DIY Retro Gaming Console</h3>
+            <p class="card-description">The DIY approach enables users to create a personalized gaming experience, tailoring the console to their specific needs and preferences.s</p>
+            <!-- <a href="app.html" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/rasp3.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Raspberry Pi Weather Station</h3>
+            <p class="card-description">This project enables users to create a personalized weather station that can monitor temperature, humidity, pressure, wind speed, and other environmental parameters.</p>
+            <!-- <a href="#" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/rasp4.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Social Media Dashboard</h3>
+            <p class="card-description"> This dashboard provides a comprehensive view of social media metrics, including engagement rates, follower growth, and content performance.</p>
+            <!-- <a href="#" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+</div>
+
+
+<div class="yellow-division"></div>
+  <!-- card group end -->
+
+<!-- List -->
+<div class="container">
+    <div class="division">
+        <h2 style="color: black;">Diploma Projects</h2>
+        <ol class="animated-list">
+            <li>Smart Home Automation System</li>
+    <li>Raspberry Pi Weather Station</li>
+    <li>Media Center with Kodi</li>
+    <li>Network-Attached Storage (NAS)</li>
+    <li>Raspberry Pi Security Camera System</li>
+    <li>Home Automation with Voice Control</li>
+    <li>Raspberry Pi-based Smart Mirror</li>
+    <li>DIY Retro Gaming Console</li>
+    <li>IoT Temperature and Humidity Monitor</li>
+    <li>Raspberry Pi Digital Photo Frame</li>
+    <li>Smart Garden Monitoring System</li>
+    <li>Raspberry Pi VPN Server</li>
+    <li>AI-Powered Chatbot</li>
+    <li>Raspberry Pi Intruder Alarm System</li>
+    <li>Smart Traffic Light System</li>
+    <li>Voice Assistant with Google Assistant</li>
+    <li>Raspberry Pi IoT Dashboard</li>
+    <li>Web Server with Apache</li>
+    <li>Remote-Controlled Car</li>
+    <li>Raspberry Pi Home Theatre PC</li>
+    <li>Smart Fridge Monitoring System</li>
+    <li>Real-Time Air Quality Monitor</li>
+    <li>Smart Light Control System</li>
+    <li>Raspberry Pi-Based Robot</li>
+    <li>Home Energy Monitor</li>
+    <li>Raspberry Pi-Based IoT Gateway</li>
+    <li>Interactive LED Display</li>
+    <li>Raspberry Pi Drone Control</li>
+    <li>Webcam Streamer</li>
+    <li>Raspberry Pi Smart Lock</li>
+    <li>Personal Cloud Storage with Nextcloud</li>
+    <li>Raspberry Pi Smart Speaker</li>
+    <li>Smart Weather Forecasting System</li>
+    <li>IoT-Enabled Smart Plant Watering System</li>
+    <li>Raspberry Pi-Based Smart Security System</li>
+    <li>Home Automation with OpenHAB</li>
+    <li>Raspberry Pi Facial Recognition System</li>
+    <li>DIY Smart Coffee Maker</li>
+    <li>Raspberry Pi-Based Smart Mirror with Display</li>
+    <li>Custom Alarm Clock with Weather Info</li>
+    <li>Raspberry Pi-Based Video Doorbell</li>
+    <li>Social Media Dashboard</li>
+    <li>Raspberry Pi Health Monitoring System</li>
+    <li>Remote Pet Feeder</li>
+    <li>DIY Home Surveillance System</li>
+    <li>Raspberry Pi Smart Home Hub</li>
+    <li>Wireless Printing Server</li>
+    <li>Raspberry Pi-Based Digital Assistant</li>
+    <li>Interactive Home Inventory System</li>
+    <li>Raspberry Pi Time-Lapse Camera</li>
+    <li>Remote Control for Smart TV</li>
+    <li>Raspberry Pi Data Logger</li>
+    <li>Smart Mirror with Voice Commands</li>
+    <li>Raspberry Pi Based Traffic Monitoring System</li>
+    <li>IoT-Based Smart Irrigation System</li>
+    <li>Custom Voice-Controlled Home Assistant</li>
+    <li>Raspberry Pi Air Quality Monitoring Station</li>
+    <li>Home Automation with Node-RED</li>
+    <li>Raspberry Pi-Based Music Streaming Server</li>
+    <li>Smart Energy Meter with Data Visualization</li>
+    <li>Raspberry Pi-Based Automated Plant Growth System</li>
+    <li>Digital Clock with Weather Display</li>
+    <li>Raspberry Pi-Based Fitness Tracker</li>
+    <li>IoT-Based Smart Waste Management System</li>
+    <li>Raspberry Pi Pet Monitoring System</li>
+    <li>Smart Home Energy Management System</li>
+    <li>Raspberry Pi-Based Smart Assistant for Seniors</li>
+    <li>Home Automation with Blynk App</li>
+    <li>Raspberry Pi-Based Mood Lighting System</li>
+    <li>Custom Raspberry Pi Firewall</li>
+    <li>IoT-Based Smart Water Management System</li>
+    <li>Raspberry Pi-Based Face Detection Security System</li>
+    <li>Raspberry Pi-Based Smart Shopping Cart</li>
+    <li>Voice-Controlled Home Appliances</li>
+    <li>Raspberry Pi-Based Interactive Quiz System</li>
+    <li>Smart Gardening System with Sensor Feedback</li>
+    <li>Raspberry Pi-Based Music Visualizer</li>
+    <li>IoT-Based Smart Building Management System</li>
+    <li>Raspberry Pi-Based Fitness Gym Management System</li>
+    <li>Custom Raspberry Pi Gaming Server</li>
+    <li>Raspberry Pi-Based Personal Weather Station</li>
+    <li>Smart Air Conditioner Control System</li>
+    <li>Raspberry Pi-based Smart Treadmill</li>
+    <li>IoT-Enabled Home Safety Monitoring System</li>
+    <li>Raspberry Pi Voice-Controlled Drone</li>
+    <li>Custom Raspberry Pi Chat Application</li>
+    <li>Raspberry Pi-Based Smart Lighting Automation</li>
+    <li>IoT-Based Home Security System</li>
+    <li>Raspberry Pi Indoor Positioning System</li>
+    <li>Raspberry Pi-Based Virtual Reality Interface</li>
+    <li>Custom Raspberry Pi Web Radio Station</li>
+    <li>IoT-Based Smart Parking System</li>
+    <li>Raspberry Pi-Based Personal Assistant App</li>
+    <li>Raspberry Pi-Based Attendance Management System</li>
+    <li>Smart Air Quality Detection System</li>
+    <li>Raspberry Pi Voice-Controlled Smart Hub</li>
+    <li>IoT-Based Environmental Monitoring System</li>
+        </ol>
+    </div>
+</div>
+<!-- Division B -->
+<div class="division">
+    <h2 style="color: black;">Final Year Projects</h2>
+    <ol class="animated-list">
+        <li>Smart Home Automation System</li>
+        <li>Raspberry Pi Weather Station</li>
+        <li>Media Center with Kodi</li>
+        <li>Network-Attached Storage (NAS)</li>
+        <li>Raspberry Pi Security Camera System</li>
+        <li>Home Automation with Voice Control</li>
+        <li>Raspberry Pi-based Smart Mirror</li>
+        <li>DIY Retro Gaming Console</li>
+        <li>IoT Temperature and Humidity Monitor</li>
+        <li>Raspberry Pi Digital Photo Frame</li>
+        <li>Smart Garden Monitoring System</li>
+        <li>Raspberry Pi VPN Server</li>
+        <li>AI-Powered Chatbot</li>
+        <li>Raspberry Pi Intruder Alarm System</li>
+        <li>Smart Traffic Light System</li>
+        <li>Voice Assistant with Google Assistant</li>
+        <li>Raspberry Pi IoT Dashboard</li>
+        <li>Web Server with Apache</li>
+        <li>Remote-Controlled Car</li>
+        <li>Raspberry Pi Home Theatre PC</li>
+        <li>Smart Fridge Monitoring System</li>
+        <li>Real-Time Air Quality Monitor</li>
+        <li>Smart Light Control System</li>
+        <li>Raspberry Pi-Based Robot</li>
+        <li>Home Energy Monitor</li>
+        <li>Raspberry Pi-Based IoT Gateway</li>
+        <li>Interactive LED Display</li>
+        <li>Raspberry Pi Drone Control</li>
+        <li>Webcam Streamer</li>
+        <li>Raspberry Pi Smart Lock</li>
+        <li>Personal Cloud Storage with Nextcloud</li>
+        <li>Raspberry Pi Smart Speaker</li>
+        <li>Smart Weather Forecasting System</li>
+        <li>IoT-Enabled Smart Plant Watering System</li>
+        <li>Raspberry Pi-Based Smart Security System</li>
+        <li>Home Automation with OpenHAB</li>
+        <li>Raspberry Pi Facial Recognition System</li>
+        <li>DIY Smart Coffee Maker</li>
+        <li>Raspberry Pi-Based Smart Mirror with Display</li>
+        <li>Custom Alarm Clock with Weather Info</li>
+        <li>Raspberry Pi-Based Video Doorbell</li>
+        <li>Social Media Dashboard</li>
+        <li>Raspberry Pi Health Monitoring System</li>
+        <li>Remote Pet Feeder</li>
+        <li>DIY Home Surveillance System</li>
+        <li>Raspberry Pi Smart Home Hub</li>
+        <li>Wireless Printing Server</li>
+        <li>Raspberry Pi-Based Digital Assistant</li>
+        <li>Interactive Home Inventory System</li>
+        <li>Raspberry Pi Time-Lapse Camera</li>
+        <li>Remote Control for Smart TV</li>
+        <li>Raspberry Pi Data Logger</li>
+        <li>Smart Mirror with Voice Commands</li>
+        <li>Raspberry Pi-Based Traffic Monitoring System</li>
+        <li>IoT-Based Smart Irrigation System</li>
+        <li>Custom Voice-Controlled Home Assistant</li>
+        <li>Raspberry Pi Air Quality Monitoring Station</li>
+        <li>Home Automation with Node-RED</li>
+        <li>Raspberry Pi-Based Music Streaming Server</li>
+        <li>Smart Energy Meter with Data Visualization</li>
+        <li>Raspberry Pi-Based Automated Plant Growth System</li>
+        <li>Digital Clock with Weather Display</li>
+        <li>Raspberry Pi-Based Fitness Tracker</li>
+        <li>IoT-Based Smart Waste Management System</li>
+        <li>Raspberry Pi Pet Monitoring System</li>
+        <li>Smart Home Energy Management System</li>
+        <li>Raspberry Pi-Based Smart Assistant for Seniors</li>
+        <li>Home Automation with Blynk App</li>
+        <li>Raspberry Pi-Based Mood Lighting System</li>
+        <li>Custom Raspberry Pi Firewall</li>
+        <li>IoT-Based Smart Water Management System</li>
+        <li>Raspberry Pi-Based Face Detection Security System</li>
+        <li>Raspberry Pi-Based Smart Shopping Cart</li>
+        <li>Voice-Controlled Home Appliances</li>
+        <li>Raspberry Pi-Based Interactive Quiz System</li>
+        <li>Smart Gardening System with Sensor Feedback</li>
+        <li>Raspberry Pi-Based Music Visualizer</li>
+        <li>IoT-Based Smart Building Management System</li>
+        <li>Raspberry Pi-Based Fitness Gym Management System</li>
+        <li>Custom Raspberry Pi Gaming Server</li>
+        <li>Raspberry Pi-Based Personal Weather Station</li>
+        <li>Smart Air Conditioner Control System</li>
+        <li>Raspberry Pi-based Smart Treadmill</li>
+        <li>IoT-Enabled Home Safety Monitoring System</li>
+        <li>Raspberry Pi Voice-Controlled Drone</li>
+        <li>Custom Raspberry Pi Chat Application</li>
+        <li>Raspberry Pi-Based Smart Lighting Automation</li>
+        <li>IoT-Based Home Security System</li>
+        <li>Raspberry Pi Indoor Positioning System</li>
+        <li>Raspberry Pi-Based Virtual Reality Interface</li>
+        <li>Custom Raspberry Pi Web Radio Station</li>
+        <li>IoT-Based Smart Parking System</li>
+        <li>Raspberry Pi-Based Personal Assistant App</li>
+        <li>Raspberry Pi-Based Attendance Management System</li>
+        <li>Smart Air Quality Detection System</li>
+        <li>Raspberry Pi Voice-Controlled Smart Hub</li>
+        <li>IoT-Based Environmental Monitoring System</li>
+    </ol>
+</div>
+  
+  <br><br>
+
+  <!-- Footer -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="footer_content">
+    
+      </div>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwWL16YO8Yo7IBKlsQtD5NLqE9KdHEUbHFrT6dpfy8urNQvA/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <p>
+        &copy; 2024 All Rights Reserved.
+      </p>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Custom Script -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

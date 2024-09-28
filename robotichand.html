@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Robotic Hand - DC Supply Projects</title>
+  <link rel="icon" type="image/x-icon" href="images/logoDC.jpg">
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
+     .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 5px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    justify-content:center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card-description {
+    margin: 10px 0;
+    color: #555;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #fbca47;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+}
+
+.card-button:hover {
+    background-color: #fbca47;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* One card per row */
+    }
+}
+
+    /* list */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .division {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 550px; /* Fixed width for responsiveness */
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .division:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    .animated-list {
+      padding-left: 20px; /* Indent for ordered list */
+    }
+
+    .animated-list li {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeIn 0.5s forwards;
+    }
+
+    .animated-list li:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .animated-list li:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .animated-list li:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    .animated-list li:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+
+    .animated-list li:nth-child(5) {
+      animation-delay: 0.5s;
+    }
+
+    .animated-list li:nth-child(6) {
+      animation-delay: 0.6s;
+    }
+
+    .animated-list li:nth-child(7) {
+      animation-delay: 0.7s;
+    }
+
+    .animated-list li:nth-child(8) {
+      animation-delay: 0.8s;
+    }
+
+    .animated-list li:nth-child(9) {
+      animation-delay: 0.9s;
+    }
+
+    .animated-list li:nth-child(10) {
+      animation-delay: 1s;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center; /* Center align in mobile view */
+      }
+
+      .division {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 400px; /* Maximum width */
+      }
+    }
+    .division {
+        text-align: center; /* Center the text */
+        margin: 20px auto; /* Center the division block itself */
+        width: 80%; /* Adjust the width as needed */
+    }
+
+
+    .yellow-division {
+      background-color: #fbca47; /* Yellow background */
+      height: 50px; /* Fixed height */
+      width: 100%; /* Full width to make it responsive */
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section pt-0">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-0">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logoDC.jpg" class="logo-img">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="do.html"> Privacy </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html"> Blog </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us </a>
+                </li>
+              </ul>
+              <div class="user_option">
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+  <br><br><br>
+
+<!-- card group start -->
+
+
+<div class="card-container">
+    <div class="card">
+        <img src="images/robotich1.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Robotic Hand with Modular Design</h3>
+            <p class="card-description">These modules can be easily assembled and disassembled to create a customized robotic hand that can perform a variety of tasks</p>
+            <!-- <a href="software.html" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/robotich2.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">DIY Robotic Hand Kit for Education</h3>
+            <p class="card-description">A DIY robotic hand kit for education is a type of educational tool designed to teach students about robotics, engineering, and programming.</p>
+            <!-- <a href="app.html" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/robotich3.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Biomimetic Robotic Hand Design</h3>
+            <p class="card-description">A biomimetic robotic hand design is a type of robotic system that mimics the structure and function of a human hand.</p>
+            <!-- <a href="#" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/robotich4.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h3 class="card-title">Gesture-Controlled Robotic Hand</h3>
+            <p class="card-description">A gesture-controlled robotic hand is a type of robotic system that uses hand or arm gestures to control its movements and actions. </p>
+            <!-- <a href="#" class="card-button">Explore More</a> -->
+        </div>
+    </div>
+</div>
+
+
+<div class="yellow-division"></div>
+  <!-- card group end -->
+
+<!-- List -->
+<div class="container">
+    <div class="division">
+        <h2 style="color: black;">Diploma Projects</h2>
+        <ol class="animated-list">
+            <li>Gesture-Controlled Robotic Hand</li>
+            <li>Prosthetic Robotic Hand with Sensors</li>
+            <li>Robotic Hand with Machine Learning for Grip Control</li>
+            <li>Voice-Controlled Robotic Hand</li>
+            <li>Teleoperated Robotic Hand for Remote Tasks</li>
+            <li>Robotic Hand for 3D Printing Applications</li>
+            <li>Robotic Hand with Haptic Feedback</li>
+            <li>Biomimetic Robotic Hand Design</li>
+            <li>Robotic Hand with Tactile Sensors</li>
+            <li>Smart Robotic Hand for Sign Language Translation</li>
+            <li>Robotic Hand for Assembly Line Automation</li>
+            <li>Robotic Hand for Surgical Assistance</li>
+            <li>DIY Robotic Hand Kit for Education</li>
+            <li>Robotic Hand Controlled by Eye Movement</li>
+            <li>Robotic Hand for Picking and Placing Objects</li>
+            <li>Multi-Fingered Robotic Hand with Servo Motors</li>
+            <li>Robotic Hand with Artificial Intelligence for Object Recognition</li>
+            <li>Remote-Controlled Robotic Hand via Mobile App</li>
+            <li>Robotic Hand for Home Automation Tasks</li>
+            <li>Robotic Hand with Adaptive Grip Strength</li>
+            <li>Robotic Hand for Object Manipulation in Hazardous Environments</li>
+            <li>Soft Robotic Hand with Flexible Materials</li>
+            <li>Robotic Hand for Virtual Reality Interaction</li>
+            <li>Robotic Hand with LED Indicators for Status</li>
+            <li>Robotic Hand for Art and Sculpture Creation</li>
+            <li>Robotic Hand with Programmable Movements</li>
+            <li>Robotic Hand for Agriculture Applications</li>
+            <li>Robotic Hand with Bluetooth Connectivity</li>
+            <li>Robotic Hand with Embedded Camera for Vision Feedback</li>
+            <li>Robotic Hand for Educational Demonstrations</li>
+            <li>Robotic Hand for Industrial Automation</li>
+            <li>Robotic Hand with Customizable Grippers</li>
+            <li>Robotic Hand for Rehabilitation Therapy</li>
+            <li>Robotic Hand with Real-Time Data Processing</li>
+            <li>Robotic Hand for Sorting and Classifying Objects</li>
+            <li>Robotic Hand for Underwater Exploration</li>
+            <li>Robotic Hand with Augmented Reality Integration</li>
+            <li>Robotic Hand with Adaptive Learning Capabilities</li>
+            <li>Robotic Hand for Personal Assistive Technologies</li>
+            <li>Robotic Hand with Integrated Sensors for Feedback</li>
+            <li>Robotic Hand with Modular Design</li>
+            <li>Robotic Hand for Human-Robot Interaction Studies</li>
+            <li>Robotic Hand with Gesture Recognition Software</li>
+            <li>Robotic Hand for Space Exploration Tasks</li>
+            <li>Robotic Hand for DIY Robotics Projects</li>
+            <li>Robotic Hand with Energy Harvesting Capabilities</li>
+            <li>Robotic Hand for Environmental Monitoring</li>
+            <li>Robotic Hand for Educational Robotics Competitions</li>
+            <li>Robotic Hand with User-Friendly Control Interface</li>
+            <li>Robotic Hand for Collecting Samples in the Field</li>
+            <li>Robotic Hand with Voice Recognition Technology</li>
+            <li>Robotic Hand for Hazardous Material Handling</li>
+            <li>Robotic Hand with Customizable Functions</li>
+            <li>Robotic Hand with Real-Time Communication Capabilities</li>
+            <li>Robotic Hand for Emergency Response Scenarios</li>
+            <li>Robotic Hand with Multi-modal Input Control</li>
+            <li>Robotic Hand for Home Health Care Applications</li>
+            <li>Robotic Hand with Lightweight Design</li>
+            <li>Robotic Hand for 3D Scanning Applications</li>
+            <li>Robotic Hand with Interchangeable Grippers</li>
+            <li>Robotic Hand for Simulated Mars Missions</li>
+            <li>Robotic Hand with High Precision Control</li>
+            <li>Robotic Hand for Underwater Robotics</li>
+            <li>Robotic Hand with Enhanced Dexterity</li>
+            <li>Robotic Hand with an Interactive Learning Platform</li>
+            <li>Robotic Hand with Self-Diagnostic Capabilities</li>
+            <li>Robotic Hand for Research in Robotics and AI</li>
+            <li>Robotic Hand with 360-Degree Movement</li>
+            <li>Robotic Hand for Customized Fabrication Tasks</li>
+            <li>Robotic Hand with Integrated Light Source</li>
+            <li>Robotic Hand for Smart Home Integration</li>
+            <li>Robotic Hand with Motion Tracking Technology</li>
+            <li>Robotic Hand for Food Handling Applications</li>
+            <li>Robotic Hand with Enhanced Sensory Feedback</li>
+            <li>Robotic Hand for Precision Manufacturing</li>
+            <li>Robotic Hand with Remote Diagnostic Tools</li>
+            <li>Robotic Hand with Open-Source Software Integration</li>
+            <li>Robotic Hand with Touchscreen Control</li>
+            <li>Robotic Hand for Community Service Projects</li>
+            <li>Robotic Hand with Self-Learning Algorithms</li>
+            <li>Robotic Hand for STEM Education Initiatives</li>
+            <li>Robotic Hand for Scientific Research Applications</li>
+            <li>Robotic Hand with Integrated GPS for Navigation</li>
+            <li>Robotic Hand for Logistics and Delivery Services</li>
+            <li>Robotic Hand with Multi-Functional Tools</li>
+            <li>Robotic Hand for Rescue Missions</li>
+            <li>Robotic Hand with Enhanced Grip Techniques</li>
+            <li>Robotic Hand for Musical Instrument Play</li>
+            <li>Robotic Hand for Crafting and DIY Projects</li>
+            <li>Robotic Hand with Wireless Charging</li>
+            <li>Robotic Hand for Virtual Collaboration</li>
+            <li>Robotic Hand with Child-Friendly Design</li>
+            <li>Robotic Hand for Educational Workshops</li>
+        </ol>
+    </div>
+</div>
+<!-- Division B -->
+<div class="division">
+    <h2 style="color: black;">Final Year Projects</h2>
+    <ol class="animated-list">
+        <li>Gesture-Controlled Robotic Hand</li>
+    <li>Prosthetic Robotic Hand with Sensors</li>
+    <li>Robotic Hand with Machine Learning for Grip Control</li>
+    <li>Voice-Controlled Robotic Hand</li>
+    <li>Teleoperated Robotic Hand for Remote Tasks</li>
+    <li>Robotic Hand for 3D Printing Applications</li>
+    <li>Robotic Hand with Haptic Feedback</li>
+    <li>Biomimetic Robotic Hand Design</li>
+    <li>Robotic Hand with Tactile Sensors</li>
+    <li>Smart Robotic Hand for Sign Language Translation</li>
+    <li>Robotic Hand for Assembly Line Automation</li>
+    <li>Robotic Hand for Surgical Assistance</li>
+    <li>DIY Robotic Hand Kit for Education</li>
+    <li>Robotic Hand Controlled by Eye Movement</li>
+    <li>Robotic Hand for Picking and Placing Objects</li>
+    <li>Multi-Fingered Robotic Hand with Servo Motors</li>
+    <li>Robotic Hand with Artificial Intelligence for Object Recognition</li>
+    <li>Remote-Controlled Robotic Hand via Mobile App</li>
+    <li>Robotic Hand for Home Automation Tasks</li>
+    <li>Robotic Hand with Adaptive Grip Strength</li>
+    <li>Robotic Hand for Object Manipulation in Hazardous Environments</li>
+    <li>Soft Robotic Hand with Flexible Materials</li>
+    <li>Robotic Hand for Virtual Reality Interaction</li>
+    <li>Robotic Hand with LED Indicators for Status</li>
+    <li>Robotic Hand for Art and Sculpture Creation</li>
+    <li>Robotic Hand with Programmable Movements</li>
+    <li>Robotic Hand for Agriculture Applications</li>
+    <li>Robotic Hand with Bluetooth Connectivity</li>
+    <li>Robotic Hand with Embedded Camera for Vision Feedback</li>
+    <li>Robotic Hand for Educational Demonstrations</li>
+    <li>Robotic Hand for Industrial Automation</li>
+    <li>Robotic Hand with Customizable Grippers</li>
+    <li>Robotic Hand for Rehabilitation Therapy</li>
+    <li>Robotic Hand with Real-Time Data Processing</li>
+    <li>Robotic Hand for Sorting and Classifying Objects</li>
+    <li>Robotic Hand for Underwater Exploration</li>
+    <li>Robotic Hand with Augmented Reality Integration</li>
+    <li>Robotic Hand with Adaptive Learning Capabilities</li>
+    <li>Robotic Hand for Personal Assistive Technologies</li>
+    <li>Robotic Hand with Integrated Sensors for Feedback</li>
+    <li>Robotic Hand with Modular Design</li>
+    <li>Robotic Hand for Human-Robot Interaction Studies</li>
+    <li>Robotic Hand with Gesture Recognition Software</li>
+    <li>Robotic Hand for Space Exploration Tasks</li>
+    <li>Robotic Hand for DIY Robotics Projects</li>
+    <li>Robotic Hand with Energy Harvesting Capabilities</li>
+    <li>Robotic Hand for Environmental Monitoring</li>
+    <li>Robotic Hand for Educational Robotics Competitions</li>
+    <li>Robotic Hand with User-Friendly Control Interface</li>
+    <li>Robotic Hand for Collecting Samples in the Field</li>
+    <li>Robotic Hand with Voice Recognition Technology</li>
+    <li>Robotic Hand for Hazardous Material Handling</li>
+    <li>Robotic Hand with Customizable Functions</li>
+    <li>Robotic Hand with Real-Time Communication Capabilities</li>
+    <li>Robotic Hand for Emergency Response Scenarios</li>
+    <li>Robotic Hand with Multi-modal Input Control</li>
+    <li>Robotic Hand for Home Health Care Applications</li>
+    <li>Robotic Hand with Lightweight Design</li>
+    <li>Robotic Hand for 3D Scanning Applications</li>
+    <li>Robotic Hand with Interchangeable Grippers</li>
+    <li>Robotic Hand for Simulated Mars Missions</li>
+    <li>Robotic Hand with High Precision Control</li>
+    <li>Robotic Hand for Underwater Robotics</li>
+    <li>Robotic Hand with Enhanced Dexterity</li>
+    <li>Robotic Hand with an Interactive Learning Platform</li>
+    <li>Robotic Hand with Self-Diagnostic Capabilities</li>
+    <li>Robotic Hand for Research in Robotics and AI</li>
+    <li>Robotic Hand with 360-Degree Movement</li>
+    <li>Robotic Hand for Customized Fabrication Tasks</li>
+    <li>Robotic Hand with Integrated Light Source</li>
+    <li>Robotic Hand for Smart Home Integration</li>
+    <li>Robotic Hand with Motion Tracking Technology</li>
+    <li>Robotic Hand for Food Handling Applications</li>
+    <li>Robotic Hand with Enhanced Sensory Feedback</li>
+    <li>Robotic Hand for Precision Manufacturing</li>
+    <li>Robotic Hand with Remote Diagnostic Tools</li>
+    <li>Robotic Hand with Open-Source Software Integration</li>
+    <li>Robotic Hand with Touchscreen Control</li>
+    <li>Robotic Hand for Community Service Projects</li>
+    <li>Robotic Hand with Self-Learning Algorithms</li>
+    <li>Robotic Hand for STEM Education Initiatives</li>
+    <li>Robotic Hand for Scientific Research Applications</li>
+    <li>Robotic Hand with Integrated GPS for Navigation</li>
+    <li>Robotic Hand for Logistics and Delivery Services</li>
+    <li>Robotic Hand with Multi-Functional Tools</li>
+    <li>Robotic Hand for Rescue Missions</li>
+    <li>Robotic Hand with Enhanced Grip Techniques</li>
+    <li>Robotic Hand for Musical Instrument Play</li>
+    <li>Robotic Hand for Crafting and DIY Projects</li>
+    <li>Robotic Hand with Wireless Charging</li>
+    <li>Robotic Hand for Virtual Collaboration</li>
+    <li>Robotic Hand with Child-Friendly Design</li>
+    <li>Robotic Hand for Educational Workshops</li>
+    </ol>
+</div>
+  
+  <br><br>
+
+  <!-- Footer -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="footer_content">
+    
+      </div>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwWL16YO8Yo7IBKlsQtD5NLqE9KdHEUbHFrT6dpfy8urNQvA/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <p>
+        &copy; 2024 All Rights Reserved.
+      </p>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Custom Script -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
